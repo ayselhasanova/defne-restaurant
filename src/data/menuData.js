@@ -1,4 +1,3 @@
-
 import teaImage from '../products/tea.jpg';
 import greenteaImage from '../products/greentea.jpg';
 import mintteaImage from '../products/minttea.jpg';
