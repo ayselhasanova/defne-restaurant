@@ -6,7 +6,7 @@ import thymeteaImage from '../products/thymetea.jpg';
 import gingerteaImage from '../products/gingertea.jpg';
 
 
-// import alpengold from '../products/alpengold.jpg';
+import alpengold from '../products/alpengold.jpg';
 import snickers from '../products/snickers.jpg';
 import bounty from '../products/bounty.jpg';
 import twix from '../products/twix.jpg';
@@ -56,7 +56,7 @@ export const menuData = {
       { "id": "c_5", "title": { "az": "Zəncəfilli-ballı çay", "en": "Ginger & Honey tea", "ru": "Имбирный чай с медом" }, "desc": { "az": "Xüsusi zəncəfil və təbii bal ilə", "en": "With special ginger and natural honey", "ru": "С Имбирь и медом" }, "price": "9.00 ₼", "image": gingerteaImage }
     ],
     "sokoladlar": [
-      // { "id": "s_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Алпенгод" }, "desc": { "az": "Hər kəsin sevimlisi", "en": "Favorite chocolate", "ru": "Любимый шоколад" }, "price": "4.00 ₼", "image": alpengold },
+      { "id": "s_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Алпенгод" }, "desc": { "az": "Hər kəsin sevimlisi", "en": "Favorite chocolate", "ru": "Любимый шоколад" }, "price": "4.00 ₼", "image": alpengold },
       { "id": "s_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Сникерс" }, "desc": { "az": "Fıstıqlı şokolad", "en": "Peanut chocolate", "ru": "Шоколад с арахисом" }, "price": "3.50 ₼", "image": snickers },
       { "id": "s_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Баунти" }, "desc": { "az": "Kokoslu şokolad", "en": "Coconut chocolate", "ru": "Кокосовый шоколад" }, "price": "3.50 ₼", "image": bounty },
       { "id": "s_4", "title": { "az": "Twix", "en": "Twix", "ru": "Твикс" }, "desc": { "az": "Karamelli peçenyeli şokolad", "en": "Caramel cookie chocolate", "ru": "Шоколад с карамелью и печеньем" }, "price": "3.50 ₼", "image": twix },
