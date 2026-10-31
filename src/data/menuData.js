@@ -1,3 +1,5 @@
+import banner from '../../public/banner.jpg';
+
 import teaImage from '../products/tea.jpg';
 import tea1Image from '../products/teaaa.jpg';
 import greenteaImage from '../products/greentea.jpg';
@@ -31,7 +33,7 @@ export const menuData = {
     "wifiPass": "Defne2026"
   },
   "interior": [
-    { "id": "int_1", "title": { "az": "Çay dəzgahı", "en": "Tea station", "ru": "Чайная станция" }, "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" }
+    { "id": "int_1", "title": { "az": "Çay dəzgahı", "en": "Tea station", "ru": "Чайная станция" }, "image": banner }
   ],
   "categories": [
     { "id": "caylar", "name": { "az": "Çaylar", "en": "Teas", "ru": "Чай" }, "icon": "Wine" },
