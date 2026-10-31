@@ -14,6 +14,9 @@ import bounty from '../products/bounty.jpg';
 import twix from '../products/twix.jpg';
 import rulet from '../products/rulet.jpg';
 import chocopie from '../products/chocopie.jpg';
+import rafaellokonfet from '../products/rafaellokonfet.jpg';
+import croissant from '../products/croissant.jpg';
+import popkek from '../products/popkek.jpg';
 
 import whitecherry from '../products/whitecherry.jpg';
 import rafaello from '../products/rafaello.jpg';
@@ -87,9 +90,9 @@ export const menuData = {
       { "id": "cs_4", "title": { "az": "Twix", "en": "Twix", "ru": "Twix" }, "desc": { "az": "Karamel və peçenye", "en": "Caramel and cookie", "ru": "Печенье с карамелью" }, "price": "4.00 ₼", "image": twix },
       { "id": "cs_5", "title": { "az": "Rulet", "en": "Roll cake", "ru": "Рулет" }, "desc": { "az": "Dilimlənmiş şirin rulet", "en": "Sliced sweet roll", "ru": "Сладкий рулет" }, "price": "5.00 ₼", "image": rulet },
       { "id": "cs_6", "title": { "az": "Cocopie", "en": "Cocopie", "ru": "Chocopie" }, "desc": { "az": "Paketdə 6 ədəd", "en": "6 pieces in pack", "ru": "6 штук в упаковке" }, "price": "6.00 ₼", "image": chocopie },
-      { "id": "cs_7", "title": { "az": "Rafaello", "en": "Rafaello", "ru": "Rafaello" }, "desc": { "az": "Kokoslu konfet, 6 ədəd", "en": "Coconut candies, 6 pcs", "ru": "Кокосовые конфеты, 6 шт" }, "price": "6.00 ₼", "image": rafaello },
-      { "id": "cs_8", "title": { "az": "Kruassan", "en": "Croissant", "ru": "Круассан" }, "desc": { "az": "Təzə bişmiş kruassan", "en": "Freshly baked croissant", "ru": "Свежевыпеченный круассан" }, "price": "7.00 ₼", "image": "" },
-      { "id": "cs_9", "title": { "az": "Pop kek", "en": "Pop cake", "ru": "Поп кек" }, "desc": { "az": "Şirin pop kek", "en": "Sweet pop cake", "ru": "Сладкий кекс" }, "price": "6.00 ₼", "image": "" }
+      { "id": "cs_7", "title": { "az": "Rafaello", "en": "Rafaello", "ru": "Rafaello" }, "desc": { "az": "Kokoslu konfet, 6 ədəd", "en": "Coconut candies, 6 pcs", "ru": "Кокосовые конфеты, 6 шт" }, "price": "6.00 ₼", "image": rafaellokonfet },
+      { "id": "cs_8", "title": { "az": "Kruassan", "en": "Croissant", "ru": "Круассан" }, "desc": { "az": "Təzə bişmiş kruassan", "en": "Freshly baked croissant", "ru": "Свежевыпеченный круассан" }, "price": "7.00 ₼", "image": croissant },
+      { "id": "cs_9", "title": { "az": "Pop kek", "en": "Pop cake", "ru": "Поп кек" }, "desc": { "az": "Şirin pop kek", "en": "Sweet pop cake", "ru": "Сладкий кекс" }, "price": "6.00 ₼", "image": popkek }
     ],
     "murebbeler": [
       { "id": "mr_1", "title": { "az": "Qoz mürəbbəsi", "en": "Walnut jam", "ru": "Варенье из грецкого ореха" }, "desc": { "az": "Ev üsulu qoz mürəbbəsi", "en": "Homemade walnut jam", "ru": "Домашнее варенье из грецкого ореха" }, "price": "7.00 ₼", "image": whitecherry },
