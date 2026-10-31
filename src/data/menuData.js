@@ -121,11 +121,11 @@ export const menuData = {
     "kofeler": [
       { "id": "kf_1", "title": { "az": "Kappucino (paket)", "en": "Cappuccino (packet)", "ru": "Капучино (пакет)" }, "desc": { "az": "İsti hazır qəhvə", "en": "Hot instant coffee", "ru": "Горячий растворимый кофе" }, "price": "2.00 ₼", "image": "" },
       { "id": "kf_2", "title": { "az": "Amerikano (paket)", "en": "Americano (packet)", "ru": "Американо (пакет)" }, "desc": { "az": "İsti qəhvə", "en": "Hot coffee", "ru": "Горячий кофе" }, "price": "2.00 ₼", "image": "" },
-      { "id": "kf_3", "title": { "az": "Maccode (paket)", "en": "Maccode (packet)", "ru": "Maccode (пакет)" }, "desc": { "az": "Hazır qəhvə paketi", "en": "Instant coffee packet", "ru": "Пакет растворимого кофе" }, "price": "2.00 ₼", "image": "" },
+      { "id": "kf_3", "title": { "az": "Maccofe (paket)", "en": "Maccode (packet)", "ru": "Maccode (пакет)" }, "desc": { "az": "Hazır qəhvə paketi", "en": "Instant coffee packet", "ru": "Пакет растворимого кофе" }, "price": "2.00 ₼", "image": "" },
       { "id": "kf_4", "title": { "az": "İsti şokolad", "en": "Hot chocolate", "ru": "Горячий шоколад" }, "desc": { "az": "Şokoladlı isti içki", "en": "Chocolate hot drink", "ru": "Шоколадный горячий напиток" }, "price": "2.00 ₼", "image": "" }
     ],
     "qelyanlar": [
-      { "id": "ql_1", "title": { "az": "Şaxtı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
+      { "id": "ql_1", "title": { "az": "Saxsı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
       { "id": "ql_2", "title": { "az": "Alma", "en": "Apple shisha", "ru": "Яблочный кальян" }, "desc": { "az": "Təbii alma kasasında", "en": "In natural apple bowl", "ru": "На натуральном яблоке" }, "price": "15.00 ₼", "image": "" },
       { "id": "ql_3", "title": { "az": "Qreyfrut", "en": "Grapefruit shisha", "ru": "Грейпфрутовый кальян" }, "desc": { "az": "Təbii qreyfrut kasasında", "en": "In natural grapefruit bowl", "ru": "На натуральном грейпфруте" }, "price": "18.00 ₼", "image": "" },
       { "id": "ql_4", "title": { "az": "Portağal", "en": "Orange shisha", "ru": "Апельсиновый кальян" }, "desc": { "az": "Təbii portağal kasasında", "en": "In natural orange bowl", "ru": "На натуральном апельсине" }, "price": "18.00 ₼", "image": "" }
@@ -137,7 +137,7 @@ export const menuData = {
       { "id": "mq_4", "title": { "az": "Papaya qurusu", "en": "Dried papaya", "ru": "Сушеная папайя" }, "desc": { "az": "Şirin papaya tikələri", "en": "Sweet papaya pieces", "ru": "Сладкие кусочки папайи" }, "price": "2.00 ₼", "image": "" },
       { "id": "mq_5", "title": { "az": "Yoğurt konfeti", "en": "Yogurt candy", "ru": "Йогуртовые конфеты" }, "desc": { "az": "Yoğurt örtüklü şirniyyat", "en": "Yogurt coated candy", "ru": "Конфеты в йогуртовой глазури" }, "price": "5.00 ₼", "image": "" },
       { "id": "mq_6", "title": { "az": "Manqo qurusu", "en": "Dried mango", "ru": "Сушеное манго" }, "desc": { "az": "Qurudulmuş manqo dilimləri", "en": "Dried mango slices", "ru": "Сушеные дольки манго" }, "price": "3.00 ₼", "image": "" },
-      { "id": "mq_7", "title": { "az": "Erik qurusu", "en": "Dried plum", "ru": "Сушеный чернослив" }, "desc": { "az": "Qurudulmuş erik", "en": "Dried plum", "ru": "Сушеный чернослив" }, "price": "4.00 ₼", "image": "" },
+      { "id": "mq_7", "title": { "az": "Ərik qurusu", "en": "Dried plum", "ru": "Сушеный чернослив" }, "desc": { "az": "Qurudulmuş erik", "en": "Dried plum", "ru": "Сушеный чернослив" }, "price": "4.00 ₼", "image": "" },
       { "id": "mq_8", "title": { "az": "Qaysı", "en": "Dried apricot", "ru": "Курага" }, "desc": { "az": "Şirin qaysı qurusu", "en": "Sweet dried apricot", "ru": "Сладкая курага" }, "price": "5.00 ₼", "image": "" },
       { "id": "mq_9", "title": { "az": "Jele konfeti", "en": "Jelly candy", "ru": "Желейные конфеты" }, "desc": { "az": "Rəngli jele konfetlər", "en": "Colorful jelly candies", "ru": "Цветные желейные конфеты" }, "price": "5.00 ₼", "image": "" }
     ],
