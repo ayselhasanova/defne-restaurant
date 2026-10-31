@@ -1,10 +1,10 @@
-
 import teaImage from '../products/tea.jpg';
+import tea1Image from '../products/teaaa.jpg';
 import greenteaImage from '../products/greentea.jpg';
 import mintteaImage from '../products/minttea.jpg';
+import fruitteaImage from '../products/fruittea.jpg';
 import thymeteaImage from '../products/thymetea.jpg';
-import gingerteaImage from '../products/gingertea.jpg';
-
+import spicyteaImage from '../products/spicytea.jpg';
 
 import alpengold from '../products/alpengold.jpg';
 import snickers from '../products/snickers.jpg';
@@ -20,112 +20,145 @@ export const menuData = {
   "restaurant": {
     "name": "DEFNE",
     "tagline": "LOUNGE",
-    "phone": "+994 12 000 00 00",
+    "phone": "+994 55 715 00 30",
     "address": {
-      "az": "Bakı, Azərbaycan, Nizami küçəsi 45",
-      "en": "Baku, Azerbaijan, Nizami Street 45",
-      "ru": "Баку, Азербайджан, улица Низами 45"
+      "az": "Kazımovski 112",
+      "en": "Kazımovski 112",
+      "ru": "Kazımovski 112"
     },
-    "mapLink": "https://maps.google.com/?q=Baku",
-    "wifiName": "DEFNE_GUEST",
-    "wifiPass": "defne2026"
+    "mapLink": "https://maps.app.goo.gl/fArxR6v3R4ZRXR419",
+    "wifiName": "Defne Lounge",
+    "wifiPass": "Defne2026"
   },
   "interior": [
     { "id": "int_1", "title": { "az": "Çay dəzgahı", "en": "Tea station", "ru": "Чайная станция" }, "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" }
   ],
   "categories": [
-    { "id": "cay", "name": { "az": "Çay", "en": "Tea", "ru": "Чай" }, "icon": "Wine" },
-    { "id": "sokoladlar", "name": { "az": "Şokoladlar", "en": "Chocolates", "ru": "Шоколад" }, "icon": "Cake" },
+    { "id": "caylar", "name": { "az": "Çaylar", "en": "Teas", "ru": "Чай" }, "icon": "Wine" },
+    { "id": "cay_sirniyyat", "name": { "az": "Çay + Şirniyyatlar", "en": "Tea & Sweets", "ru": "Чай и сладости" }, "icon": "Cake" },
     { "id": "murebbeler", "name": { "az": "Mürəbbələr", "en": "Jams", "ru": "Варенье" }, "icon": "Cake" },
-    { "id": "cerez", "name": { "az": "Çərəz", "en": "Nuts", "ru": "Орехи" }, "icon": "Utensils" },
-    { "id": "sirniyyat", "name": { "az": "Şirniyyat & Paxlava", "en": "Sweets & Baklava", "ru": "Сладости и пахлава" }, "icon": "Cake" },
     { "id": "alkoqolsuz", "name": { "az": "Alkoqolsuz İçkilər", "en": "Soft Drinks", "ru": "Безалкогольные" }, "icon": "Wine" },
-    { "id": "piva", "name": { "az": "Pivə", "en": "Beer", "ru": "Пиво" }, "icon": "Wine" },
-    { "id": "qelyan", "name": { "az": "Qəlyan", "en": "Shisha", "ru": "Кальян" }, "icon": "Utensils" },
-    { "id": "pizza", "name": { "az": "Pizza", "en": "Pizza", "ru": "Пицца" }, "icon": "Utensils" },
-    { "id": "tost", "name": { "az": "Tost & Fri", "en": "Toast & Fries", "ru": "Тост и фри" }, "icon": "Utensils" },
-    { "id": "mezeler", "name": { "az": "Məzələr", "en": "Appetizers", "ru": "Закуски" }, "icon": "Utensils" },
+    { "id": "enerji", "name": { "az": "Enerji İçkiləri", "en": "Energy Drinks", "ru": "Энергетики" }, "icon": "Wine" },
+    { "id": "kofeler", "name": { "az": "Kofelər", "en": "Coffees", "ru": "Кофе" }, "icon": "Wine" },
+    { "id": "qelyanlar", "name": { "az": "Qəlyanlar", "en": "Shisha", "ru": "Кальян" }, "icon": "Utensils" },
+    { "id": "meyve_qurusu", "name": { "az": "Meyvə Qurusu & Konfet", "en": "Dried Fruits & Candies", "ru": "Сухофрукты и конфеты" }, "icon": "Cake" },
+    { "id": "cerezler", "name": { "az": "Çərəzlər", "en": "Nuts", "ru": "Орехи" }, "icon": "Utensils" },
+    { "id": "pive", "name": { "az": "Pivə", "en": "Beer", "ru": "Пиво" }, "icon": "Wine" },
+    { "id": "pive_mezeleri", "name": { "az": "Pivə Məzələri", "en": "Beer Snacks", "ru": "Закуски к пиву" }, "icon": "Utensils" },
     { "id": "desert", "name": { "az": "Desert", "en": "Dessert", "ru": "Десерт" }, "icon": "Cake" }
   ],
   "items": {
-    "cay": [
-      { "id": "c_1", "title": { "az": "Qara çay", "en": "Black tea", "ru": "Черный чай" }, "desc": { "az": "Ətirli klassik qara çay", "en": "Aromatic classic black tea", "ru": "Ароматный черный чай" }, "price": "6.00 ₼", "image": teaImage },
-      { "id": "c_2", "title": { "az": "Yaşıl çay", "en": "Green tea", "ru": "Зеленый чай" }, "desc": { "az": "Təravətləndirici yaşıl çay", "en": "Refreshing green tea", "ru": "Освежающий зеленый чай" }, "price": "6.00 ₼", "image": greenteaImage },
-      { "id": "c_3", "title": { "az": "Nanəli çay", "en": "Mint tea", "ru": "Мятный чай" }, "desc": { "az": "Təzə nanə yarpaqları ilə", "en": "With fresh mint leaves", "ru": "С листьями свежей мяты" }, "price": "7.00 ₼", "image": mintteaImage },
-      { "id": "c_4", "title": { "az": "Kəklikotulu çay", "en": "Thyme tea", "ru": "Чай с чабрецом" }, "desc": { "az": "Dağ kəklikotu ilə dəmlənmiş", "en": "Brewed with mountain thyme", "ru": "Заваренный с горным чабрецом" }, "price": "7.00 ₼", "image": thymeteaImage },
-      { "id": "c_5", "title": { "az": "Zəncəfilli-ballı çay", "en": "Ginger & Honey tea", "ru": "Имбирный чай с медом" }, "desc": { "az": "Xüsusi zəncəfil və təbii bal ilə", "en": "With special ginger and natural honey", "ru": "С Имбирь и медом" }, "price": "9.00 ₼", "image": gingerteaImage }
+    "caylar": [
+      { 
+        "id": "cy_1", 
+        "title": { "az": "Qara çay", "en": "Black tea", "ru": "Черный чай" }, 
+        "desc": { "az": "Klassik dəmləmə qara çay", "en": "Classic brewed black tea", "ru": "Классический заварной черный чай" }, 
+        "price": "4.00 ₼", 
+        "image": teaImage 
+      },
+      { 
+        "id": "cy_2", 
+        "title": { "az": "Yaşıl çay", "en": "Green tea", "ru": "Зеленый чай" }, 
+        "desc": { "az": "Təravətli yaşıl çay dəmləməsi", "en": "Fresh green tea brew", "ru": "Свежий зеленый чай" }, 
+        "price": "5.00 ₼", 
+        "image": greenteaImage 
+      },
+      { 
+        "id": "cy_3", 
+        "title": { "az": "Ədviyyatlı çay", "en": "Spiced tea", "ru": "Пряный чай" }, 
+        "desc": { "az": "Seçilmiş ədviyyat və ot əlavələri ilə (Kəklikotu, melissa, jasmin, darçın, nanə, qızılgül, şaftalı, 1001 gecə çayı, manqo, mixək, sitrus)", "en": "With selected herbs and spices", "ru": "С травами и специями" }, 
+        "price": "6.00 ₼", 
+        "image": spicyteaImage 
+      },
+      { 
+        "id": "cy_4", 
+        "title": { "az": "Meyvəli çay", "en": "Fruity tea", "ru": "Фруктовый чай" }, 
+        "desc": { "az": "Zəngin meyvə aromalı çay", "en": "Rich fruit flavored tea", "ru": "Чай с богатым фруктовым ароматом" }, 
+        "price": "8.00 ₼", 
+        "image": fruitteaImage 
+      }
     ],
-    "sokoladlar": [
-      { "id": "s_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Алпенгод" }, "desc": { "az": "Hər kəsin sevimlisi", "en": "Favorite chocolate", "ru": "Любимый шоколад" }, "price": "4.00 ₼", "image": alpengold },
-      { "id": "s_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Сникерс" }, "desc": { "az": "Fıstıqlı şokolad", "en": "Peanut chocolate", "ru": "Шоколад с арахисом" }, "price": "3.50 ₼", "image": snickers },
-      { "id": "s_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Баунти" }, "desc": { "az": "Kokoslu şokolad", "en": "Coconut chocolate", "ru": "Кокосовый шоколад" }, "price": "3.50 ₼", "image": bounty },
-      { "id": "s_4", "title": { "az": "Twix", "en": "Twix", "ru": "Твикс" }, "desc": { "az": "Karamelli peçenyeli şokolad", "en": "Caramel cookie chocolate", "ru": "Шоколад с карамелью и печеньем" }, "price": "3.50 ₼", "image": twix },
-      { "id": "s_5", "title": { "az": "Rulet", "en": "Rulet", "ru": "Рулет" }, "desc": { "az": "Şokolad çeşidi", "en": "Chocolate variety", "ru": "Шоколадное ассорти" }, "price": "4.00 ₼", "image": rulet },
-      { "id": "s_6", "title": { "az": "Cocopit", "en": "Cocopit", "ru": "Кокопит" }, "desc": { "az": "Kokoslu şokolad", "en": "Coconut bar", "ru": "Кокосовый батончик" }, "price": "3.50 ₼", "image": chocopie }
+    "cay_sirniyyat": [
+      { "id": "cs_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Alpengold" }, "desc": { "az": "Standart şokolad", "en": "Standard chocolate", "ru": "Шоколад" }, "price": "6.00 ₼", "image": alpengold },
+      { "id": "cs_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Snickers" }, "desc": { "az": "Fıstıqlı baton", "en": "Peanut chocolate bar", "ru": "Шоколадный батончик с арахисом" }, "price": "4.00 ₼", "image": snickers },
+      { "id": "cs_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Bounty" }, "desc": { "az": "Kokos içlikli şokolad", "en": "Coconut filled chocolate", "ru": "Шоколад с кокосовой начинкой" }, "price": "4.00 ₼", "image": bounty },
+      { "id": "cs_4", "title": { "az": "Twix", "en": "Twix", "ru": "Twix" }, "desc": { "az": "Karamel və peçenye", "en": "Caramel and cookie", "ru": "Печенье с карамелью" }, "price": "4.00 ₼", "image": twix },
+      { "id": "cs_5", "title": { "az": "Rulet", "en": "Roll cake", "ru": "Рулет" }, "desc": { "az": "Dilimlənmiş şirin rulet", "en": "Sliced sweet roll", "ru": "Сладкий рулет" }, "price": "5.00 ₼", "image": rulet },
+      { "id": "cs_6", "title": { "az": "Cocopie", "en": "Cocopie", "ru": "Chocopie" }, "desc": { "az": "Paketdə 6 ədəd", "en": "6 pieces in pack", "ru": "6 штук в упаковке" }, "price": "6.00 ₼", "image": chocopie },
+      { "id": "cs_7", "title": { "az": "Rafaello", "en": "Rafaello", "ru": "Rafaello" }, "desc": { "az": "Kokoslu konfet, 6 ədəd", "en": "Coconut candies, 6 pcs", "ru": "Кокосовые конфеты, 6 шт" }, "price": "6.00 ₼", "image": rafaello },
+      { "id": "cs_8", "title": { "az": "Kruassan", "en": "Croissant", "ru": "Круассан" }, "desc": { "az": "Təzə bişmiş kruassan", "en": "Freshly baked croissant", "ru": "Свежевыпеченный круассан" }, "price": "7.00 ₼", "image": "" },
+      { "id": "cs_9", "title": { "az": "Pop kek", "en": "Pop cake", "ru": "Поп кек" }, "desc": { "az": "Şirin pop kek", "en": "Sweet pop cake", "ru": "Сладкий кекс" }, "price": "6.00 ₼", "image": "" }
     ],
     "murebbeler": [
-      { "id": "m_1", "title": { "az": "Ağ gilas mürəbbəsi", "en": "White cherry jam", "ru": "Варенье из белой черешни" }, "desc": { "az": "Ev sayağı təbii mürəbbə", "en": "Homemade natural jam", "ru": "Домашнее натуральное варенье" }, "price": "6.00 ₼", "image": whitecherry },
-      { "id": "m_2", "title": { "az": "Rafaello", "en": "Rafaello Jam", "ru": "Варенье Рафаэлло" }, "desc": { "az": "Xüsusi reseptlə imza mürəbbə", "en": "Signature jam with special recipe", "ru": "Фирменное варенье" }, "price": "8.00 ₼", "image": rafaello }
-    ],
-    "cerez": [
-      { "id": "cr_1", "title": { "az": "Qoz", "en": "Walnut", "ru": "Грецкий орех" }, "desc": { "az": "Təmizlənmiş qoz ləpəsi", "en": "Peeled walnuts", "ru": "Очищенные грецкие орехи" }, "price": "5.00 ₼", "image": "" },
-      { "id": "cr_2", "title": { "az": "Fındıq", "en": "Hazelnut", "ru": "Фундук" }, "desc": { "az": "Qovrulmuş fındıq", "en": "Roasted hazelnuts", "ru": "Жареный фундук" }, "price": "5.00 ₼", "image": "" },
-      { "id": "cr_3", "title": { "az": "Keşyu", "en": "Cashew", "ru": "Кешью" }, "desc": { "az": "Xırtıldayan keşyu ləpəsi", "en": "Crispy cashews", "ru": "Хрустящий кешью" }, "price": "6.00 ₼", "image": "" },
-      { "id": "cr_4", "title": { "az": "Badam", "en": "Almond", "ru": "Миндаль" }, "desc": { "az": "Seçilmiş badam", "en": "Selected almonds", "ru": "Отборный миндаль" }, "price": "6.00 ₼", "image": "" },
-      { "id": "cr_5", "title": { "az": "Püstə", "en": "Pistachio", "ru": "Фисташки" }, "desc": { "az": "Duza qoyulmuş püstə", "en": "Salted pistachios", "ru": "Соленые фисташки" }, "price": "7.00 ₼", "image": "" },
-      { "id": "cr_6", "title": { "az": "Kişmiş", "en": "Raisins", "ru": "Изюм" }, "desc": { "az": "Qızılı kişmiş", "en": "Golden raisins", "ru": "Золотистый изюм" }, "price": "4.00 ₼", "image": "" },
-      { "id": "cr_7", "title": { "az": "Xurma", "en": "Dates", "ru": "Финики" }, "desc": { "az": "Şirin təbii xurma", "en": "Sweet natural dates", "ru": "Сладкие натуральные финики" }, "price": "4.50 ₼", "image": "" },
-      { "id": "cr_8", "title": { "az": "Araxis", "en": "Peanuts", "ru": "Арахис" }, "desc": { "az": "Qovrulmuş duzlu araxis", "en": "Roasted salted peanuts", "ru": "Жареный соленый арахис" }, "price": "3.50 ₼", "image": "" }
-    ],
-    "sirniyyat": [
-      { "id": "sr_1", "title": { "az": "Meyvə qurusu", "en": "Dried fruit", "ru": "Сухофрукты" }, "desc": { "az": "Qarışıq quru meyvələr", "en": "Assorted dried fruits", "ru": "Ассорти сухофруктов" }, "price": "7.00 ₼", "image": "" },
-      { "id": "sr_2", "title": { "az": "Türk paxlavası", "en": "Turkish Baklava", "ru": "Турецкая пахлава" }, "desc": { "az": "Fıstıqlı əsl türk paxlavası", "en": "Real Turkish pistachio baklava", "ru": "Настоящая турецкая пахлава с фисташками" }, "price": "9.00 ₼", "image": "" }
+      { "id": "mr_1", "title": { "az": "Qoz mürəbbəsi", "en": "Walnut jam", "ru": "Варенье из грецкого ореха" }, "desc": { "az": "Ev üsulu qoz mürəbbəsi", "en": "Homemade walnut jam", "ru": "Домашнее варенье из грецкого ореха" }, "price": "7.00 ₼", "image": whitecherry },
+      { "id": "mr_2", "title": { "az": "Çiyələk mürəbbəsi", "en": "Strawberry jam", "ru": "Клубничное варенье" }, "desc": { "az": "Təbii çiyələk mürəbbəsi", "en": "Natural strawberry jam", "ru": "Натуральное клубничное варенье" }, "price": "6.00 ₼", "image": "" },
+      { "id": "mr_3", "title": { "az": "Snickers mürəbbəsi", "en": "Snickers jam", "ru": "Варенье Сникерс" }, "desc": { "az": "Xüsusi hazırlanmış desert mürəbbə", "en": "Special dessert jam", "ru": "Специальное десертное варенье" }, "price": "6.00 ₼", "image": "" },
+      { "id": "mr_4", "title": { "az": "Plombir mürəbbəsi", "en": "Plombir jam", "ru": "Варенье Пломбир" }, "desc": { "az": "Krem dadlı mürəbbə", "en": "Cream flavored jam", "ru": "Варенье со вкусом пломбира" }, "price": "6.00 ₼", "image": "" },
+      { "id": "mr_5", "title": { "az": "Ağ gilas mürəbbəsi", "en": "White cherry jam", "ru": "Варенье из белой черешни" }, "desc": { "az": "Ənənəvi ağ gilas mürəbbəsi", "en": "Traditional white cherry jam", "ru": "Традиционное варенье из белой черешни" }, "price": "6.00 ₼", "image": rafaello }
     ],
     "alkoqolsuz": [
-      { "id": "a_1", "title": { "az": "Redbull", "en": "Redbull", "ru": "Ред Булл" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "6.00 ₼", "image": "" },
-      { "id": "a_2", "title": { "az": "Bizon", "en": "Bizon", "ru": "Бизон" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "4.50 ₼", "image": "" },
-      { "id": "a_3", "title": { "az": "Cola, Fanta, Sprite", "en": "Cola, Fanta, Sprite", "ru": "Кола, Фанта, Спрайт" }, "desc": { "az": "Sərinləşdirici qazlı içkilər", "en": "Refreshing soft drinks", "ru": "Освежающие газированные напитки" }, "price": "4.00 ₼", "image": "" },
-      { "id": "a_4", "title": { "az": "FuseTea", "en": "FuseTea", "ru": "ФьюзТи" }, "desc": { "az": "Soyuq çay", "en": "Iced tea", "ru": "Холодный чай" }, "price": "4.00 ₼", "image": "" },
-      { "id": "a_5", "title": { "az": "Şirə", "en": "Juice", "ru": "Сок" }, "desc": { "az": "Təbii meyvə şirəsi", "en": "Natural fruit juice", "ru": "Натуральный сок" }, "price": "4.00 ₼", "image": "" },
-      { "id": "a_6", "title": { "az": "Sirab (qazlı/qazsız)", "en": "Sirab Water", "ru": "Сираб вода" }, "desc": { "az": "Mineral su", "en": "Mineral water", "ru": "Минеральная вода" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_7", "title": { "az": "Badamlı", "en": "Badamli water", "ru": "Бадамлы" }, "desc": { "az": "Təbii bulaq suyu", "en": "Natural spring water", "ru": "Природная родниковая вода" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_8", "title": { "az": "İstisu", "en": "Istisu", "ru": "Истису" }, "desc": { "az": "Müalicəvi mineral su", "en": "Medical mineral water", "ru": "Лечебная минеральная вода" }, "price": "3.50 ₼", "image": "" },
-      { "id": "a_9", "title": { "az": "Mohito", "en": "Mojito", "ru": "Мохито" }, "desc": { "az": "Nanəli sərinləşdirici", "en": "Refreshing mint mocktail", "ru": "Освежающий мохито" }, "price": "7.00 ₼", "image": "" },
-      { "id": "a_10", "title": { "az": "Qəhvə (Kapuçino)", "en": "Coffee (Capuchino)", "ru": "Кофе (Капучино)" }, "desc": { "az": "İsti təzə qəhvə", "en": "Hot fresh coffee", "ru": "Горячий свежий кофе" }, "price": "6.00 ₼", "image": "" }
+      { "id": "a_1", "title": { "az": "Cola (1L)", "en": "Cola (1L)", "ru": "Кола (1Л)" }, "desc": { "az": "Sərinləşdirici qazlı içki 1 litr", "en": "Refreshing soft drink 1L", "ru": "Освежающий газированный напиток 1л" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_2", "title": { "az": "Fanta (1L)", "en": "Fanta (1L)", "ru": "Фанта (1Л)" }, "desc": { "az": "Portağal qazlı içki 1 litr", "en": "Orange soft drink 1L", "ru": "Апельсиновый напиток 1л" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_3", "title": { "az": "Sprite (1L)", "en": "Sprite (1L)", "ru": "Спрайт (1Л)" }, "desc": { "az": "Limon qazlı içki 1 litr", "en": "Lemon soft drink 1L", "ru": "Лимонный напиток 1л" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_4", "title": { "az": "Cola (Banka)", "en": "Cola (Can)", "ru": "Кола (Жерстяная банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_5", "title": { "az": "Fanta (Banka)", "en": "Fanta (Can)", "ru": "Фанта (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_6", "title": { "az": "Sprite (Banka)", "en": "Sprite (Can)", "ru": "Спрайт (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_7", "title": { "az": "Fuse tea (0.5L)", "en": "Fuse tea (0.5L)", "ru": "Фьюз чай (0.5Л)" }, "desc": { "az": "Soyuq çay 0.5 litr", "en": "Iced tea 0.5L", "ru": "Холодный чай 0.5л" }, "price": "2.50 ₼", "image": "" },
+      { "id": "a_8", "title": { "az": "Fuse tea (Banka)", "en": "Fuse tea (Can)", "ru": "Фьюз чай (Банка)" }, "desc": { "az": "Banka soyuq çay", "en": "Canned iced tea", "ru": "Холодный чай в банке" }, "price": "3.00 ₼", "image": "" },
+      { "id": "a_9", "title": { "az": "Meyvə şirəsi (1L)", "en": "Fruit juice (1L)", "ru": "Фруктовый сок (1Л)" }, "desc": { "az": "Qutu meyvə şirəsi 1 litr", "en": "Box fruit juice 1L", "ru": "Фруктовый сок в пакете 1л" }, "price": "4.00 ₼", "image": "" },
+      { "id": "a_10", "title": { "az": "Moxito (Qrafin)", "en": "Mojito (Pitcher)", "ru": "Мохито (Кувшин)" }, "desc": { "az": "Sərinləşdirici moxito qrafində", "en": "Refreshing mojito in pitcher", "ru": "Освежающий мохито в кувшине" }, "price": "6.00 ₼", "image": "" }
     ],
-    "piva": [
-      { "id": "p_1", "title": { "az": "Bokal pivə", "en": "Draft Beer", "ru": "Разливное пиво" }, "desc": { "az": "Təzə sərin bokal pivə", "en": "Fresh draft beer", "ru": "Свежее разливное пиво" }, "price": "6.00 ₼", "image": "" },
-      { "id": "p_2", "title": { "az": "Şüşə pivə (Nofilter)", "en": "Bottled Beer (Unfiltered)", "ru": "Бутылочное пиво (Нефильтрованное)" }, "desc": { "az": "Keyfiyyətli nofilter pivə", "en": "Quality unfiltered bottled beer", "ru": "Качественное нефильтрованное пиво" }, "price": "7.00 ₼", "image": "" }
+    "enerji": [
+      { "id": "en_1", "title": { "az": "Red bull", "en": "Red bull", "ru": "Red bull" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "5.00 ₼", "image": "" },
+      { "id": "en_2", "title": { "az": "Bizon", "en": "Bizon", "ru": "Bizon" }, "desc": { "az": "Bütün növlər", "en": "All varieties", "ru": "Все виды" }, "price": "3.00 ₼", "image": "" },
+      { "id": "en_3", "title": { "az": "Monster", "en": "Monster", "ru": "Monster" }, "desc": { "az": "Böyük həcm enerji içkisi", "en": "Large energy drink", "ru": "Энергетический напиток большой" }, "price": "10.00 ₼", "image": "" }
     ],
-    "qelyan": [
-      { "id": "q_1", "title": { "az": "Qazko qəlyan", "en": "Gasko Shisha", "ru": "Кальян Газко" }, "desc": { "az": "Standart ləzzətli qəlyan", "en": "Standard flavored shisha", "ru": "Стандартный кальян" }, "price": "25.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
-      { "id": "q_2", "title": { "az": "Ananaslı qəlyan", "en": "Pineapple Shisha", "ru": "Ананасовый кальян" }, "desc": { "az": "Təbii ananas kasasında qəlyan", "en": "Shisha served in natural pineapple bowl", "ru": "Кальян на натуральном ананасе" }, "price": "45.00 ₼", "image": "" },
-      { "id": "q_3", "title": { "az": "Qreypfrut qəlyan", "en": "Grapefruit Shisha", "ru": "Грейпфрутовый кальян" }, "desc": { "az": "Təbii qreypfrut kasasında", "en": "Served in natural grapefruit bowl", "ru": "На натуральном грейпфруте" }, "price": "35.00 ₼", "image": "" },
-      { "id": "q_4", "title": { "az": "Alma qəlyan", "en": "Apple Shisha", "ru": "Яблочный кальян" }, "desc": { "az": "Ətirli alma kasasında qəlyan", "en": "Shisha in apple fruit bowl", "ru": "Кальян на яблоке" }, "price": "30.00 ₼", "image": "" }
+    "kofeler": [
+      { "id": "kf_1", "title": { "az": "Kappucino (paket)", "en": "Cappuccino (packet)", "ru": "Капучино (пакет)" }, "desc": { "az": "İsti hazır qəhvə", "en": "Hot instant coffee", "ru": "Горячий растворимый кофе" }, "price": "2.00 ₼", "image": "" },
+      { "id": "kf_2", "title": { "az": "Amerikano (paket)", "en": "Americano (packet)", "ru": "Американо (пакет)" }, "desc": { "az": "İsti qəhvə", "en": "Hot coffee", "ru": "Горячий кофе" }, "price": "2.00 ₼", "image": "" },
+      { "id": "kf_3", "title": { "az": "Maccode (paket)", "en": "Maccode (packet)", "ru": "Maccode (пакет)" }, "desc": { "az": "Hazır qəhvə paketi", "en": "Instant coffee packet", "ru": "Пакет растворимого кофе" }, "price": "2.00 ₼", "image": "" },
+      { "id": "kf_4", "title": { "az": "İsti şokolad", "en": "Hot chocolate", "ru": "Горячий шоколад" }, "desc": { "az": "Şokoladlı isti içki", "en": "Chocolate hot drink", "ru": "Шоколадный горячий напиток" }, "price": "2.00 ₼", "image": "" }
     ],
-    "pizza": [
-      { "id": "pz_1", "title": { "az": "Sifarişlə pizza, pide, lahmacun", "en": "Custom Pizza, Pide, Lahmacun", "ru": "Пицца, пиде, лахмаджун на заказ" }, "desc": { "az": "Odun peçində təzə bişirilən xəmirlər", "en": "Freshly baked dough specialties", "ru": "Свежевыпеченные изделия" }, "price": "12.00 ₼", "image": "" }
+    "qelyanlar": [
+      { "id": "ql_1", "title": { "az": "Şaxtı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
+      { "id": "ql_2", "title": { "az": "Alma", "en": "Apple shisha", "ru": "Яблочный кальян" }, "desc": { "az": "Təbii alma kasasında", "en": "In natural apple bowl", "ru": "На натуральном яблоке" }, "price": "15.00 ₼", "image": "" },
+      { "id": "ql_3", "title": { "az": "Qreyfrut", "en": "Grapefruit shisha", "ru": "Грейпфрутовый кальян" }, "desc": { "az": "Təbii qreyfrut kasasında", "en": "In natural grapefruit bowl", "ru": "На натуральном грейпфруте" }, "price": "18.00 ₼", "image": "" },
+      { "id": "ql_4", "title": { "az": "Portağal", "en": "Orange shisha", "ru": "Апельсиновый кальян" }, "desc": { "az": "Təbii portağal kasasında", "en": "In natural orange bowl", "ru": "На натуральном апельсине" }, "price": "18.00 ₼", "image": "" }
     ],
-    "tost": [
-      { "id": "ts_1", "title": { "az": "Pendirli Tost", "en": "Cheese Toast", "ru": "Сырный тост" }, "desc": { "az": "Qızardılmış pendirli tost", "en": "Grilled cheese toast", "ru": "Жареный сырный тост" }, "price": "5.00 ₼", "image": "" },
-      { "id": "ts_2", "title": { "az": "Sucuklu Tost", "en": "Sucuk Toast", "ru": "Тост с суджуком" }, "desc": { "az": "Sucuk və pendirli tost", "en": "Toast with sucuk and cheese", "ru": "Тост с суджуком и сыром" }, "price": "6.00 ₼", "image": "" },
-      { "id": "ts_3", "title": { "az": "Kartof Fri", "en": "French Fries", "ru": "Картофель фри" }, "desc": { "az": "Xırtıldayan qızıl kartof fri", "en": "Crispy golden french fries", "ru": "Хрустящий картофель фри" }, "price": "5.00 ₼", "image": "" },
-      { "id": "ts_4", "title": { "az": "Sosiska assoti", "en": "Sausage Assortment", "ru": "Ассорти сосисок" }, "desc": { "az": "Qızardılmış sosiska dilimləri", "en": "Fried sausage slices", "ru": "Жареные кусочки сосисок" }, "price": "7.00 ₼", "image": "" }
+    "meyve_qurusu": [
+      { "id": "mq_1", "title": { "az": "Xurma", "en": "Dates", "ru": "Финики" }, "desc": { "az": "Qurudulmuş xurma", "en": "Dried dates", "ru": "Сушеные финики" }, "price": "3.00 ₼", "image": "" },
+      { "id": "mq_2", "title": { "az": "Banan qurusu", "en": "Dried banana", "ru": "Сушеный банан" }, "desc": { "az": "Xırtıldayan banan çipsləri", "en": "Crispy banana chips", "ru": "Хрустящие банановые чипсы" }, "price": "4.00 ₼", "image": "" },
+      { "id": "mq_3", "title": { "az": "Alma qurusu", "en": "Dried apple", "ru": "Сушеное яблоко" }, "desc": { "az": "Təbii alma dilimləri", "en": "Natural apple slices", "ru": "Натуральные дольки яблока" }, "price": "3.00 ₼", "image": "" },
+      { "id": "mq_4", "title": { "az": "Papaya qurusu", "en": "Dried papaya", "ru": "Сушеная папайя" }, "desc": { "az": "Şirin papaya tikələri", "en": "Sweet papaya pieces", "ru": "Сладкие кусочки папайи" }, "price": "2.00 ₼", "image": "" },
+      { "id": "mq_5", "title": { "az": "Yoğurt konfeti", "en": "Yogurt candy", "ru": "Йогуртовые конфеты" }, "desc": { "az": "Yoğurt örtüklü şirniyyat", "en": "Yogurt coated candy", "ru": "Конфеты в йогуртовой глазури" }, "price": "5.00 ₼", "image": "" },
+      { "id": "mq_6", "title": { "az": "Manqo qurusu", "en": "Dried mango", "ru": "Сушеное манго" }, "desc": { "az": "Qurudulmuş manqo dilimləri", "en": "Dried mango slices", "ru": "Сушеные дольки манго" }, "price": "3.00 ₼", "image": "" },
+      { "id": "mq_7", "title": { "az": "Erik qurusu", "en": "Dried plum", "ru": "Сушеный чернослив" }, "desc": { "az": "Qurudulmuş erik", "en": "Dried plum", "ru": "Сушеный чернослив" }, "price": "4.00 ₼", "image": "" },
+      { "id": "mq_8", "title": { "az": "Qaysı", "en": "Dried apricot", "ru": "Курага" }, "desc": { "az": "Şirin qaysı qurusu", "en": "Sweet dried apricot", "ru": "Сладкая курага" }, "price": "5.00 ₼", "image": "" },
+      { "id": "mq_9", "title": { "az": "Jele konfeti", "en": "Jelly candy", "ru": "Желейные конфеты" }, "desc": { "az": "Rəngli jele konfetlər", "en": "Colorful jelly candies", "ru": "Цветные желейные конфеты" }, "price": "5.00 ₼", "image": "" }
     ],
-    "mezeler": [
-      { "id": "mz_1", "title": { "az": "Suxari", "en": "Croutons", "ru": "Сухарики" }, "desc": { "az": "Sarımsaqlı ev suxariləri", "en": "Garlic house croutons", "ru": "Чесночные сухарики" }, "price": "4.00 ₼", "image": "" },
-      { "id": "mz_2", "title": { "az": "Çips", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy chips", "ru": "Хрустящие чипсы" }, "price": "4.50 ₼", "image": "" },
-      { "id": "mz_3", "title": { "az": "Pendir", "en": "Cheese", "ru": "Сыр" }, "desc": { "az": "Pendir çeşidləri", "en": "Cheese selection", "ru": "Ассорти сыров" }, "price": "8.00 ₼", "image": "" },
-      { "id": "mz_4", "title": { "az": "Noxud", "en": "Chickpeas", "ru": "Нут" }, "desc": { "az": "Qovrulmuş duzlu noxud", "en": "Roasted salted chickpeas", "ru": "Жареный соленый нут" }, "price": "4.00 ₼", "image": "" },
-      { "id": "mz_5", "title": { "az": "İveriya", "en": "Iberia Meats", "ru": "Иберия" }, "desc": { "az": "Ədviyyatlı ət qəlyanaltısı", "en": "Spicy meat appetizer", "ru": "Пряная мясная закуска" }, "price": "10.00 ₼", "image": "" },
-      { "id": "mz_6", "title": { "az": "Manqalüstü", "en": "Mangal-style Snack", "ru": "Мангальная закуска" }, "desc": { "az": "Manqal tərəvəzləri əzməsi", "en": "Grilled vegetable dip", "ru": "Закуска из овощей на мангале" }, "price": "7.00 ₼", "image": "" },
-      { "id": "mz_7", "title": { "az": "Tum", "en": "Sunflower seeds", "ru": "Семечки" }, "desc": { "az": "Qovrulmuş günəbaxan tumu", "en": "Roasted sunflower seeds", "ru": "Жареные семечки" }, "price": "3.00 ₼", "image": "" },
-      { "id": "mz_8", "title": { "az": "Popkorn", "en": "Popcorn", "ru": "Popcorn" }, "desc": { "az": "İsti duzlu popkorn", "en": "Warm salted popcorn", "ru": "Теплый соленый попкорн" }, "price": "4.00 ₼", "image": "" }
+    "cerezler": [
+      { "id": "cr_1", "title": { "az": "Ağ kişmiş", "en": "White raisins", "ru": "Белый изюм" }, "desc": { "az": "Təmizlənmiş ağ kişmiş", "en": "Peeled white raisins", "ru": "Очищенный белый изюм" }, "price": "3.50 ₼", "image": "" },
+      { "id": "cr_2", "title": { "az": "Qara kişmiş", "en": "Black raisins", "ru": "Черный изюм" }, "desc": { "az": "Seçilmiş qara kişmiş", "en": "Selected black raisins", "ru": "Отборный черный изюм" }, "price": "3.50 ₼", "image": "" },
+      { "id": "cr_3", "title": { "az": "Qoz", "en": "Walnut", "ru": "Грецкий орех" }, "desc": { "az": "Təmizlənmiş qoz ləpəsi", "en": "Peeled walnut kernels", "ru": "Очищенные ядра грецкого ореха" }, "price": "5.00 ₼", "image": "" },
+      { "id": "cr_4", "title": { "az": "Fındıq", "en": "Hazelnut", "ru": "Фундук" }, "desc": { "az": "Qovrulmuş fındıq", "en": "Roasted hazelnuts", "ru": "Жареный фундук" }, "price": "4.00 ₼", "image": "" },
+      { "id": "cr_5", "title": { "az": "Badam", "en": "Almond", "ru": "Миндаль" }, "desc": { "az": "Seçilmiş badam ləpəsi", "en": "Selected almond kernels", "ru": "Отборный миндаль" }, "price": "5.00 ₼", "image": "" },
+      { "id": "cr_6", "title": { "az": "Keşyu", "en": "Cashew", "ru": "Кешью" }, "desc": { "az": "Xırtıldayan keşyu", "en": "Crispy cashews", "ru": "Хрустящий кешью" }, "price": "5.00 ₼", "image": "" },
+      { "id": "cr_7", "title": { "az": "Püstə", "en": "Pistachio", "ru": "Фисташки" }, "desc": { "az": "Duzlu püstə ləpəsi", "en": "Salted pistachios", "ru": "Соленые фисташки" }, "price": "7.50 ₼", "image": "" },
+      { "id": "cr_8", "title": { "az": "Araxis", "en": "Peanuts", "ru": "Арахис" }, "desc": { "az": "Qovrulmuş araxis", "en": "Roasted peanuts", "ru": "Жареный арахис" }, "price": "3.00 ₼", "image": "" }
+    ],
+    "pive": [
+      { "id": "pv_1", "title": { "az": "Xırdalan (0.5L)", "en": "Xirdalan (0.5L)", "ru": "Хырдалан (0.5Л)" }, "desc": { "az": "Şüşə qablaşdırma yerli pivə", "en": "Bottled local beer", "ru": "Бутылочное местное пиво" }, "price": "4.50 ₼", "image": "" },
+      { "id": "pv_2", "title": { "az": "Corona (0.35L)", "en": "Corona (0.35L)", "ru": "Corona (0.35Л)" }, "desc": { "az": "Şüşə idxal pivə", "en": "Bottled imported beer", "ru": "Бутылочное импортное пиво" }, "price": "8.00 ₼", "image": "" },
+      { "id": "pv_3", "title": { "az": "Efes draft (0.33L)", "en": "Efes draft (0.33L)", "ru": "Efes draft (0.33Л)" }, "desc": { "az": "Şüşə yüngül pivə", "en": "Bottled draft beer", "ru": "Бутылочное легкое пиво" }, "price": "5.00 ₼", "image": "" }
+    ],
+    "pive_mezeleri": [
+      { "id": "pm_1", "title": { "az": "Yaquar tum", "en": "Yaguar seeds", "ru": "Семечки Ягуар" }, "desc": { "az": "Qovrulmuş tum", "en": "Roasted sunflower seeds", "ru": "Жареные семечки" }, "price": "3.00 ₼", "image": "" },
+      { "id": "pm_2", "title": { "az": "Suxari", "en": "Croutons", "ru": "Сухарики" }, "desc": { "az": "Duzlu ev suxarisi", "en": "Salted house croutons", "ru": "Соленые сухарики" }, "price": "3.00 ₼", "image": "" },
+      { "id": "pm_3", "title": { "az": "Çipsi", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy potato chips", "ru": "Хрустящие чипсы" }, "price": "4.00 ₼", "image": "" }
     ],
     "desert": [
-      { "id": "ds_1", "title": { "az": "Meyvə assorti", "en": "Fruit Assortment", "ru": "Фруктовое ассорти" }, "desc": { "az": "Mövsümün təzə meyvə tabağı", "en": "Fresh seasonal fruit plate", "ru": "Тарелка свежих сезонных фруктов" }, "price": "20.00 ₼", "image": "" },
-      { "id": "ds_2", "title": { "az": "Adi", "en": "", "ru": "" }, "desc": { "az": "", "en": "", "ru": "" }, "price": "5.00 ₼", "image": "" },
-      { "id": "ds_3", "title": { "az": "VIP", "en": "VIP", "ru": "VIP " }, "desc": { "az": "Xüsusi VIP təqdimat", "en": "Special VIP presentation", "ru": "Специальная VIP подача" }, "price": "15.00 ₼", "image": "" }
+      { "id": "ds_1", "title": { "az": "Meyvə (orta)", "en": "Medium fruit plate", "ru": "Фруктовая тарелка (средняя)" }, "desc": { "az": "Mövsüm meyvələri çeşidi", "en": "Seasonal fruit assortment", "ru": "Ассорти сезонных фруктов" }, "price": "15.00 ₼", "image": "" },
+      { "id": "ds_2", "title": { "az": "Meyvə (böyük)", "en": "Large fruit plate", "ru": "Фруктовая тарелка (большая)" }, "desc": { "az": "Böyük həcmli meyvə tabağı", "en": "Large fruit serving plate", "ru": "Большая порция фруктов" }, "price": "25.00 ₼", "image": "" }
     ]
   }
 };

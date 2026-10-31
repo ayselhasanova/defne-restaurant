@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  Wifi,
-  Globe,
-  MapPin,
-  Phone,
-  Wine,
-  Utensils,
-  Cake,
-  Sparkles,
-  X,
+import { 
+  Wifi, 
+  Globe, 
+  MapPin, 
+  Phone, 
+  Wine, 
+  Utensils, 
+  Cake, 
+  Sparkles, 
+  X, 
   ArrowUp,
-  Check
+  Check,
+  Sun,
+  Moon
 } from "lucide-react";
 import { menuData } from "./data/menuData";
 
@@ -89,17 +91,17 @@ const UI_TEXT = {
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedDish, setSelectedDish] = useState(null);
-  const [modalType, setModalType] = useState(null);
+  const [modalType, setModalType] = useState(null); 
   const [currentLang, setCurrentLang] = useState("az");
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [activeCategoryId, setActiveCategoryId] = useState(menuData.categories[0].id);
 
   const sectionRefs = useRef({});
 
-// Loading page
-useEffect(() => {
+  useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3500);
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -131,7 +133,8 @@ useEffect(() => {
   const { restaurant, interior, categories, items } = menuData;
 
   return (
-    <div className="min-h-screen bg-[#050505] text-[#FDFBF7] font-sans selection:bg-[#D4AF37] selection:text-black">
+    <div className={`min-h-screen font-sans transition-colors duration-300 selection:bg-[#D4AF37] selection:text-black ${isDarkMode ? "bg-[#050505] text-[#FDFBF7]" : "bg-[#F7F4EC] text-[#2C221E]"}`}>
+      
       {/* FULLSCREEN VIDEO LOADER SPLASH SCREEN */}
       {isLoading && (
         <div className="fixed inset-0 z-50 bg-[#050505] flex items-center justify-center overflow-hidden transition-opacity duration-700">
@@ -144,75 +147,81 @@ useEffect(() => {
           />
         </div>
       )}
-      <div className="w-full max-w-full sm:max-w-[540px] md:max-w-[680px] lg:max-w-[900px] mx-auto min-h-screen flex flex-col relative pb-32 shadow-2xl bg-[#09090a] border-x border-[#D4AF37]/15">
 
-        {/* HEADER BRANDING (With Flanking Gold Lines & Radial Glow Background) */}
-        <header className="pt-6 pb-3 px-4 sm:px-8 text-center flex flex-col items-center relative overflow-hidden bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.14)_0%,transparent_68%)]">
+      {/* MAIN CONTAINER */}
+      <div className={`w-full max-w-full sm:max-w-[540px] md:max-w-[680px] lg:max-w-[900px] mx-auto min-h-screen flex flex-col relative pb-32 shadow-2xl transition-colors duration-300 ${isDarkMode ? "bg-[#09090a] border-x border-[#D4AF37]/15" : "bg-[#FFFDF9] border-x border-[#C5A880]/30"}`}>
+        
+        {/* THEME TOGGLE BUTTON (TOP RIGHT) */}
+        <div className="absolute top-4 right-4 z-30">
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            aria-label="Toggle Theme"
+            className={`p-2.5 rounded-full border transition-all shadow-md flex items-center justify-center ${
+              isDarkMode 
+                ? "bg-[#121214] border-[#D4AF37]/40 text-[#D4AF37] hover:bg-[#1f1f23]" 
+                : "bg-[#F3EDE2] border-[#C5A880]/50 text-[#8C6D46] hover:bg-[#EAE2D3]"
+            }`}
+          >
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
+
+        {/* HEADER BRANDING */}
+        <header className={`pt-6 pb-3 px-4 sm:px-8 text-center flex flex-col items-center relative overflow-hidden transition-colors duration-300 ${isDarkMode ? "bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.14)_0%,transparent_68%)]" : "bg-[radial-gradient(circle_at_center,rgba(197,168,128,0.18)_0%,transparent_68%)]"}`}>
 
           {/* Logo Container with Left/Right Gold Lines */}
           <div className="w-full flex items-center justify-center gap-3 my-1">
-
-            {/* Left Gold Flanking Line */}
             <div className="flex-1 relative h-[2px] overflow-hidden rounded-full bg-[linear-gradient(90deg,transparent_0%,rgba(212,175,55,0.8)_100%)] shadow-[0_0_10px_rgba(212,175,55,0.4)]"></div>
 
-            {/* Logo Image */}
             <div className="w-[180px] sm:w-[220px] h-[110px] sm:h-[135px] flex items-center justify-center shrink-0">
-              <img
-                src="/logo-icon.png"
-                alt="Chaidan Logo"
-                className="w-full h-full object-contain drop-shadow-[0_4px_18px_rgba(212,175,55,0.4)] scale-160"
+              <img 
+                src="/logo-icon.png" 
+                alt="Defne Logo" 
+                className="w-full h-full object-contain drop-shadow-[0_4px_18px_rgba(212,175,55,0.4)] scale-160" 
               />
             </div>
 
-            {/* Right Gold Flanking Line */}
             <div className="flex-1 relative h-[2px] overflow-hidden rounded-full bg-[linear-gradient(270deg,transparent_0%,rgba(212,175,55,0.8)_100%)] shadow-[0_0_10px_rgba(212,175,55,0.4)]"></div>
-
           </div>
 
           {/* ACTION BUTTONS BAR */}
           <div className="grid grid-cols-4 gap-2.5 sm:gap-4 w-full mt-4">
-            <button
-              onClick={() => setModalType("wifi")}
-              className="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-[#121214] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all shadow-md group"
-            >
-              <Wifi className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-              <span className="text-[10px] tracking-wider text-[#F8E6B9] font-medium uppercase">{ui("wifi")}</span>
-            </button>
+            {[
+              { type: "wifi", icon: Wifi, label: ui("wifi"), action: () => setModalType("wifi") },
+              { type: "language", icon: Globe, label: ui("lang"), action: () => setModalType("language") },
+              { type: "location", icon: MapPin, label: ui("location"), action: () => setModalType("location") },
+              { type: "call", icon: Phone, label: ui("call"), href: `tel:${restaurant.phone}` }
+            ].map((btn, idx) => {
+              const Icon = btn.icon;
+              const className = `flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl border transition-all shadow-md group ${
+                isDarkMode 
+                  ? "bg-[#121214] border-[#D4AF37]/30 hover:border-[#D4AF37] text-[#F8E6B9]" 
+                  : "bg-[#F3EDE2] border-[#C5A880]/40 hover:border-[#8C6D46] text-[#5C4532]"
+              }`;
 
-            <button
-              onClick={() => setModalType("language")}
-              className="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-[#121214] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all shadow-md group"
-            >
-              <Globe className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-              <span className="text-[10px] tracking-wider text-[#F8E6B9] font-medium uppercase">{ui("lang")}</span>
-            </button>
-
-            <button
-              onClick={() => setModalType("location")}
-              className="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-[#121214] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all shadow-md group"
-            >
-              <MapPin className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-              <span className="text-[10px] tracking-wider text-[#F8E6B9] font-medium uppercase">{ui("location")}</span>
-            </button>
-
-            <a
-              href={`tel:${restaurant.phone}`}
-              className="flex flex-col items-center justify-center py-2.5 px-1 rounded-2xl bg-[#121214] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all shadow-md group"
-            >
-              <Phone className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
-              <span className="text-[10px] tracking-wider text-[#F8E6B9] font-medium uppercase">{ui("call")}</span>
-            </a>
+              return btn.href ? (
+                <a key={idx} href={btn.href} className={className}>
+                  <Icon className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                  <span className="text-[10px] tracking-wider font-medium uppercase">{btn.label}</span>
+                </a>
+              ) : (
+                <button key={idx} onClick={btn.action} className={className}>
+                  <Icon className="w-5 h-5 text-[#D4AF37] mb-1 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                  <span className="text-[10px] tracking-wider font-medium uppercase">{btn.label}</span>
+                </button>
+              );
+            })}
           </div>
         </header>
 
         {/* INTERIOR BANNER */}
         <section className="px-4 sm:px-8 mt-4">
-          <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/35 shadow-xl bg-[#121214] h-40 sm:h-52 flex items-center justify-center">
+          <div className={`relative rounded-2xl overflow-hidden border shadow-xl h-40 sm:h-52 flex items-center justify-center transition-colors duration-300 ${isDarkMode ? "bg-[#121214] border-[#D4AF37]/35" : "bg-[#EAE2D3] border-[#C5A880]/40"}`}>
             {interior[0]?.image ? (
               <img src={interior[0].image} alt="İnteryer" className="w-full h-full object-cover opacity-80" />
             ) : (
-              <div className="absolute inset-0 bg-[#0c0c0e] border border-[#D4AF37]/30 flex items-center justify-center">
-                <span className="text-[#D4AF37]/60 font-serif tracking-widest text-sm uppercase">Chaidan Tea House</span>
+              <div className={`absolute inset-0 border flex items-center justify-center ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/30 text-[#D4AF37]/60" : "bg-[#F3EDE2] border-[#C5A880]/30 text-[#8C6D46]"}`}>
+                <span className="font-serif tracking-widest text-sm uppercase">Defne Lounge</span>
               </div>
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-6 pointer-events-none">
@@ -224,25 +233,30 @@ useEffect(() => {
 
         {/* MENYU TITLE DIVIDER */}
         <div className="text-center my-6 relative px-4 sm:px-8">
-          <div className="absolute inset-0 flex items-center px-4 sm:px-8"><div className="w-full border-t border-[#D4AF37]/25"></div></div>
-          <span className="relative px-4 bg-[#09090a] text-[#D4AF37] font-serif text-sm tracking-[0.3em] uppercase font-semibold">
-            {ui("menu")}
+          <div className="absolute inset-0 flex items-center px-4 sm:px-8">
+            <div className={`w-full border-t ${isDarkMode ? "border-[#D4AF37]/25" : "border-[#C5A880]/30"}`}></div>
+          </div>
+          <span className={`relative px-4 font-serif text-sm tracking-[0.3em] uppercase font-semibold transition-colors duration-300 ${isDarkMode ? "bg-[#09090a] text-[#D4AF37]" : "bg-[#FFFDF9] text-[#8C6D46]"}`}> 
+            {ui("menu")} 
           </span>
         </div>
 
         {/* STICKY CATEGORY NAV BUTTONS */}
         <div className="sticky top-2 z-40 px-4 sm:px-8 mb-6">
-          <div className="flex gap-2 overflow-x-auto p-2 bg-[#09090a]/95 backdrop-blur-md rounded-2xl border border-[#D4AF37]/30 hide-scrollbar shadow-xl">
+          <div className={`flex gap-2 overflow-x-auto p-2 backdrop-blur-md rounded-2xl border hide-scrollbar shadow-xl transition-colors duration-300 ${isDarkMode ? "bg-[#09090a]/95 border-[#D4AF37]/30" : "bg-[#FFFDF9]/95 border-[#C5A880]/40"}`}>
             {categories.map((cat) => {
               const isActive = activeCategoryId === cat.id;
               return (
                 <button
                   key={cat.id}
                   onClick={() => scrollToSection(cat.id)}
-                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs whitespace-nowrap transition-all ${isActive
-                    ? "bg-[#D4AF37] text-black font-semibold shadow-[0_0_12px_rgba(212,175,55,0.4)]"
-                    : "bg-[#141416] text-zinc-300 border border-[#D4AF37]/20 hover:border-[#D4AF37]/50"
-                    }`}
+                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs whitespace-nowrap transition-all ${
+                    isActive 
+                      ? "bg-[#D4AF37] text-black font-semibold shadow-[0_0_12px_rgba(212,175,55,0.4)]" 
+                      : isDarkMode 
+                        ? "bg-[#141416] text-zinc-300 border border-[#D4AF37]/20 hover:border-[#D4AF37]/50" 
+                        : "bg-[#F3EDE2] text-[#5C4532] border border-[#C5A880]/30 hover:border-[#8C6D46]"
+                  }`}
                 >
                   <span>{t(cat.name)}</span>
                 </button>
@@ -258,35 +272,39 @@ useEffect(() => {
             if (dishes.length === 0) return null;
 
             return (
-              <section
-                key={cat.id}
+              <section 
+                key={cat.id} 
                 ref={(el) => (sectionRefs.current[cat.id] = el)}
                 className="scroll-mt-28"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <span className="text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-serif font-bold">{t(cat.name)}</span>
-                  <div className="flex-1 border-t border-[#D4AF37]/25"></div>
+                  <div className={`flex-1 border-t ${isDarkMode ? "border-[#D4AF37]/25" : "border-[#C5A880]/30"}`}></div>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4">
                   {dishes.map((dish) => (
-                    <div
-                      key={dish.id}
+                    <div 
+                      key={dish.id} 
                       onClick={() => setSelectedDish(dish)}
-                      className="bg-[#121214] border border-[#D4AF37]/25 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg hover:border-[#D4AF37]/60 transition-all cursor-pointer group"
+                      className={`border rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg transition-all cursor-pointer group ${
+                        isDarkMode 
+                          ? "bg-[#121214] border-[#D4AF37]/25 hover:border-[#D4AF37]/60" 
+                          : "bg-[#FFFDF9] border-[#C5A880]/30 hover:border-[#8C6D46]/70 shadow-sm"
+                      }`}
                     >
-                      <div className="relative h-55 sm:h-58 overflow-hidden bg-[#0c0c0e] flex items-center justify-center border-b border-[#D4AF37]/20">
+                      <div className={`relative h-55 sm:h-58 overflow-hidden flex items-center justify-center border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
                         {dish.image ? (
                           <img src={dish.image} alt={t(dish.title)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                         ) : (
-                          <div className="w-full h-full bg-[#0a0a0c] border border-[#D4AF37]/20 flex flex-col items-center justify-center p-2 text-center">
+                          <div className={`w-full h-full border flex flex-col items-center justify-center p-2 text-center ${isDarkMode ? "bg-[#0a0a0c] border-[#D4AF37]/20" : "bg-[#FAF6EE] border-[#C5A880]/20"}`}>
                             <Sparkles className="w-6 h-6 text-[#D4AF37]/50 mb-1" strokeWidth={1.5} />
-                            <span className="text-[10px] text-[#D4AF37]/80 font-serif line-clamp-2">{t(dish.title)}</span>
+                            <span className={`text-[10px] font-serif line-clamp-2 ${isDarkMode ? "text-[#D4AF37]/80" : "text-[#8C6D46]"}`}>{t(dish.title)}</span>
                           </div>
                         )}
                       </div>
                       <div className="p-3 sm:p-3.5 flex flex-col justify-between flex-1">
-                        <h4 className="text-xs sm:text-sm font-semibold text-zinc-100 line-clamp-2 leading-snug mb-2">{t(dish.title)}</h4>
+                        <h4 className={`text-xs sm:text-sm font-semibold line-clamp-2 leading-snug mb-2 ${isDarkMode ? "text-zinc-100" : "text-[#2C221E]"}`}>{t(dish.title)}</h4>
                         <div className="text-[#D4AF37] font-bold text-sm sm:text-base tracking-wide">{dish.price}</div>
                       </div>
                     </div>
@@ -300,8 +318,8 @@ useEffect(() => {
         {/* MODAL SYSTEM */}
         {modalType && (
           <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-[#141416] border border-[#D4AF37]/40 rounded-2xl p-6 w-full max-w-sm text-center shadow-2xl relative">
-              <button onClick={() => setModalType(null)} className="absolute top-4 right-4 text-zinc-400 hover:text-white">
+            <div className={`border rounded-2xl p-6 w-full max-w-sm text-center shadow-2xl relative transition-colors duration-300 ${isDarkMode ? "bg-[#141416] border-[#D4AF37]/40 text-white" : "bg-[#FFFDF9] border-[#C5A880]/50 text-[#2C221E]"}`}>
+              <button onClick={() => setModalType(null)} className={`absolute top-4 right-4 ${isDarkMode ? "text-zinc-400 hover:text-white" : "text-zinc-600 hover:text-black"}`}>
                 <X size={20} />
               </button>
 
@@ -309,11 +327,11 @@ useEffect(() => {
                 <>
                   <Wifi className="w-8 h-8 text-[#D4AF37] mx-auto mb-2" strokeWidth={1.5} />
                   <h3 className="text-lg font-serif text-[#D4AF37] mb-1">{ui("wifiTitle")}</h3>
-                  <p className="text-xs text-zinc-400 mb-4">{ui("wifiSub")}</p>
-                  <div className="bg-black/50 border border-[#D4AF37]/20 p-3 rounded-xl mb-4 text-left">
-                    <div className="text-[11px] text-zinc-400">{ui("ssid")}</div>
-                    <div className="text-sm font-semibold text-white mb-2">{restaurant.wifiName}</div>
-                    <div className="text-[11px] text-zinc-400">{ui("pass")}</div>
+                  <p className={`text-xs mb-4 ${isDarkMode ? "text-zinc-400" : "text-zinc-600"}`}>{ui("wifiSub")}</p>
+                  <div className={`border p-3 rounded-xl mb-4 text-left ${isDarkMode ? "bg-black/50 border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/30"}`}>
+                    <div className={`text-[11px] ${isDarkMode ? "text-zinc-400" : "text-zinc-600"}`}>{ui("ssid")}</div>
+                    <div className={`text-sm font-semibold mb-2 ${isDarkMode ? "text-white" : "text-[#2C221E]"}`}>{restaurant.wifiName}</div>
+                    <div className={`text-[11px] ${isDarkMode ? "text-zinc-400" : "text-zinc-600"}`}>{ui("pass")}</div>
                     <div className="text-sm font-semibold text-[#D4AF37]">{restaurant.wifiPass}</div>
                   </div>
                   <button onClick={() => setModalType(null)} className="w-full py-2.5 bg-[#D4AF37] text-black font-semibold rounded-xl text-xs uppercase tracking-wider">
@@ -335,10 +353,13 @@ useEffect(() => {
                       <button
                         key={lang.code}
                         onClick={() => { setCurrentLang(lang.code); setModalType(null); }}
-                        className={`w-full p-3 rounded-xl border flex items-center justify-between text-xs transition-colors ${currentLang === lang.code
-                          ? "bg-[#D4AF37]/15 border-[#D4AF37] text-[#D4AF37]"
-                          : "bg-black/50 border-white/10 text-white hover:border-white/30"
-                          }`}
+                        className={`w-full p-3 rounded-xl border flex items-center justify-between text-xs transition-colors ${
+                          currentLang === lang.code 
+                            ? "bg-[#D4AF37]/15 border-[#D4AF37] text-[#D4AF37]" 
+                            : isDarkMode 
+                              ? "bg-black/50 border-white/10 text-white hover:border-white/30" 
+                              : "bg-[#F3EDE2] border-[#C5A880]/30 text-[#2C221E] hover:border-[#8C6D46]"
+                        }`}
                       >
                         <span>{lang.label}</span>
                         {currentLang === lang.code && <Check size={16} />}
@@ -352,9 +373,9 @@ useEffect(() => {
                 <>
                   <MapPin className="w-8 h-8 text-[#D4AF37] mx-auto mb-2" strokeWidth={1.5} />
                   <h3 className="text-lg font-serif text-[#D4AF37] mb-4">{ui("locTitle")}</h3>
-                  <div className="bg-black/50 border border-white/10 rounded-xl p-4 mb-4 text-left">
+                  <div className={`border rounded-xl p-4 mb-4 text-left ${isDarkMode ? "bg-black/50 border-white/10" : "bg-[#F3EDE2] border-[#C5A880]/30"}`}>
                     <span className="block text-[#D4AF37] text-[10px] uppercase tracking-wider mb-1">{ui("address")}</span>
-                    <p className="text-xs text-white leading-relaxed">{t(restaurant.address)}</p>
+                    <p className={`text-xs leading-relaxed ${isDarkMode ? "text-white" : "text-[#2C221E]"}`}>{t(restaurant.address)}</p>
                   </div>
                   <a href={restaurant.mapLink} target="_blank" rel="noopener noreferrer" className="w-full py-2.5 bg-[#D4AF37] text-black font-semibold rounded-xl text-xs uppercase tracking-wider block text-center">
                     {ui("openMaps")}
@@ -368,12 +389,12 @@ useEffect(() => {
         {/* DISH DETAIL MODAL */}
         {selectedDish && (
           <div className="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-end sm:items-center justify-center sm:p-4">
-            <div className="bg-[#121214] border-t sm:border border-[#D4AF37]/40 rounded-t-[2.5rem] sm:rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative shadow-2xl flex flex-col">
-              <button onClick={() => setSelectedDish(null)} className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center hover:bg-black">
+            <div className={`border-t sm:border rounded-t-[2.5rem] sm:rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative shadow-2xl flex flex-col transition-colors duration-300 ${isDarkMode ? "bg-[#121214] border-[#D4AF37]/40 text-white" : "bg-[#FFFDF9] border-[#C5A880]/40 text-[#2C221E]"}`}>
+              <button onClick={() => setSelectedDish(null)} className={`absolute top-4 right-4 z-20 w-9 h-9 rounded-full border flex items-center justify-center ${isDarkMode ? "bg-black/60 border-white/20 text-white hover:bg-black" : "bg-white/80 border-[#C5A880]/40 text-black hover:bg-white"}`}>
                 <X size={18} />
               </button>
 
-              <div className="relative h-80 sm:h-120 w-full bg-[#0c0c0e] flex items-center justify-center shrink-0 border-b border-[#D4AF37]/20">
+              <div className={`relative h-80 sm:h-120 w-full flex items-center justify-center shrink-0 border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
                 {selectedDish.image ? (
                   <img src={selectedDish.image} alt={t(selectedDish.title)} className="w-full h-full object-cover" />
                 ) : (
@@ -387,10 +408,10 @@ useEffect(() => {
               <div className="p-6 flex flex-col justify-between flex-1">
                 <div>
                   <h3 className="text-xl font-serif text-[#D4AF37] mb-2">{t(selectedDish.title)}</h3>
-                  <p className="text-sm text-zinc-300 leading-relaxed mb-6">{t(selectedDish.desc) || "Məlumat mövcud deyil."}</p>
+                  <p className={`text-sm leading-relaxed mb-6 ${isDarkMode ? "text-zinc-300" : "text-zinc-700"}`}>{t(selectedDish.desc) || "Məlumat mövcud deyil."}</p>
                 </div>
-                <div className="flex items-center justify-between border-t border-white/10 pt-4 mt-auto">
-                  <span className="text-xs uppercase tracking-wider text-zinc-400">{ui("price")}</span>
+                <div className={`flex items-center justify-between border-t pt-4 mt-auto ${isDarkMode ? "border-white/10" : "border-[#C5A880]/20"}`}>
+                  <span className={`text-xs uppercase tracking-wider ${isDarkMode ? "text-zinc-400" : "text-zinc-600"}`}>{ui("price")}</span>
                   <span className="text-lg font-bold text-[#D4AF37]">{selectedDish.price}</span>
                 </div>
               </div>
