@@ -89,6 +89,19 @@ import mixpizza from '../products/mixpizza.jpg';
 import fruitbig from '../products/fruitbig.jpg';
 import fruitsmall from '../products/fruitsmall.jpg';
 
+import set1 from '../products/set1.jpg';
+import set2 from '../products/set2.jpg';
+import set3 from '../products/set3.jpg';
+import set4 from '../products/set4.jpg';
+import set5 from '../products/set5.jpg';
+import oliqarxset from '../products/oliqarxset.jpg';
+import set6 from '../products/set6.jpg';
+import set7 from '../products/set7.jpg';
+import set8 from '../products/set8.jpg';
+import set9 from '../products/set9.jpg';
+import serinset from '../products/serinset.jpg';
+
+
 export const menuData = {
   "restaurant": {
     "name": "DEFNE",
@@ -107,6 +120,7 @@ export const menuData = {
     { "id": "int_1", "title": { "az": "Çay dəzgahı", "en": "Tea station", "ru": "Чайная станция" }, "image": banner }
   ],
   "categories": [
+    { "id": "setler", "name": { "az": "Setlər", "en": "Sets", "ru": "Сеты" }, "icon": "Cake" },
     { "id": "caylar", "name": { "az": "Çaylar", "en": "Teas", "ru": "Чай" }, "icon": "Wine" },
     { "id": "sirniyyat", "name": { "az": "Şirniyyatlar", "en": "Sweets", "ru": "Сладости" }, "icon": "Cake" },
     { "id": "murebbeler", "name": { "az": "Mürəbbələr", "en": "Jams", "ru": "Варенье" }, "icon": "Cake" },
@@ -122,6 +136,120 @@ export const menuData = {
     { "id": "desert", "name": { "az": "Desert", "en": "Dessert", "ru": "Десерт" }, "icon": "Cake" },
   ],
   "items": {
+    "setler": [
+      { 
+        "id": "st_1", 
+        "title": { "az": "Set 1", "en": "Set 1", "ru": "Сет 1" }, 
+        "desc": { "az": "2 çaynik çay + snickers + qəlyan (saxsı)", "en": "2 teapots of tea + snickers + shisha (clay bowl)", "ru": "2 чайника чая + сникерс + кальян (глина)" }, 
+        "price": "9.90 ₼", 
+        "image": set1 
+      },
+      { 
+        "id": "st_2", 
+        "title": { "az": "Set 2", "en": "Set 2", "ru": "Сет 2" }, 
+        "desc": { "az": "2 çaynik çay + pop kek + coco pie + kruassan", "en": "2 teapots of tea + pop cake + coco pie + croissant", "ru": "2 чайника чая + поп кек + коко пай + круассан" }, 
+        "price": "11.90 ₼", 
+        "image": set2 
+      },
+      { 
+        "id": "st_3", 
+        "title": { "az": "Set 3", "en": "Set 3", "ru": "Сет 3" }, 
+        "desc": { "az": "2 çaynik çay + alpen gold + qəlyan (saxsı)", "en": "2 teapots of tea + alpen gold + shisha (clay bowl)", "ru": "2 чайника чая + алпен голд + кальян (глина)" }, 
+        "price": "13.90 ₼", 
+        "image": set3 
+      },
+      { 
+        "id": "st_4", 
+        "title": { "az": "Set 4", "en": "Set 4", "ru": "Сет 4" }, 
+        "desc": { "az": "2 çaynik çay + mürəbbə (seçim) + qəlyan (saxsı)", "en": "2 teapots of tea + jam (choice) + shisha (clay bowl)", "ru": "2 чайника чая + варенье (на выбор) + кальян (глина)" }, 
+        "price": "14.90 ₼", 
+        "image": set4 
+      },
+      { 
+        "id": "st_5", 
+        "title": { "az": "Set 5", "en": "Set 5", "ru": "Сет 5" }, 
+        "desc": { "az": "2 çaynik çay + snickers + rulet + mürəbbə (seçim) + qəlyan (saxsı)", "en": "2 teapots of tea + snickers + roll cake + jam (choice) + shisha", "ru": "2 чайника чая + сникерс + рулет + варенье (на выбор) + кальян" }, 
+        "price": "16.90 ₼", 
+        "image": set5 
+      },
+      { 
+        "id": "st_oligarx", 
+        "title": { "az": "Oliqarx Seti", "en": "Oligarch Set", "ru": "Сет Олигарх" }, 
+        "desc": { "az": "2 çaynik çay + alpen gold + çərəz + meyvə qurusu + rulet + rafaello + pop kek + 2 ədəd qəlyan (saxsı)", "en": "2 teapots + alpen gold + nuts + dried fruit + roll + rafaello + pop cake + 2 shishas", "ru": "2 чайника + алпен голд + орехи + сухофрукты + рулет + рафаэлло + поп кек + 2 кальяна" }, 
+        "price": "49.90 ₼", 
+        "image": oliqarxset 
+      },
+      { 
+        "id": "st_6", 
+        "title": { "az": "Set 6", "en": "Set 6", "ru": "Сет 6" }, 
+        "desc": { "az": "1L Cola + cips + suxari", "en": "1L Cola + chips + croutons", "ru": "1Л Кола + чипсы + сухарики" }, 
+        "price": "8.90 ₼", 
+        "image": set6 
+      },
+      { 
+        "id": "st_7", 
+        "title": { "az": "Set 7", "en": "Set 7", "ru": "Сет 7" }, 
+        "desc": { "az": "1L Cola + cips + suxari + tum (yaquar)", "en": "1L Cola + chips + croutons + sunflower seeds", "ru": "1Л Кола + чипсы + сухарики + семечки" }, 
+        "price": "10.90 ₼", 
+        "image": set7 
+      },
+      { 
+        "id": "st_8", 
+        "title": { "az": "Set 8", "en": "Set 8", "ru": "Сет 8" }, 
+        "desc": { "az": "2 RedBull + cips + suxari + qəlyan (saxsı)", "en": "2 RedBulls + chips + croutons + shisha", "ru": "2 РедБулл + чипсы + сухарики + кальян" }, 
+        "price": "21.90 ₼", 
+        "image": set8 
+      },
+      { 
+        "id": "st_9", 
+        "title": { "az": "Set 9", "en": "Set 9", "ru": "Сет 9" }, 
+        "desc": { "az": "4 RedBull + çərəz + meyvə + qəlyan (saxsı)", "en": "4 RedBulls + nuts + fruit + shisha", "ru": "4 РедБулл + орехи + фрукты + кальян" }, 
+        "price": "32.90 ₼", 
+        "image": set9 
+      },
+      { 
+        "id": "st_serin", 
+        "title": { "az": "Sərin Set", "en": "Cool Set", "ru": "Прохладный Сет" }, 
+        "desc": { "az": "4x Bizon + cipsi + suxari + tum (yaquar) + qəlyan (saxsı)", "en": "4x Bizon + chips + croutons + seeds + shisha", "ru": "4x Бизон + чипсы + сухарики + семечки + кальян" }, 
+        "price": "19.90 ₼", 
+        "image": serinset 
+      },
+      { 
+        "id": "st_pizza", 
+        "title": { "az": "Pizza Seti", "en": "Pizza Set", "ru": "Пицца Сет" }, 
+        "desc": { "az": "2 banka Cola + qarışıq pizza + qəlyan (saxsı)", "en": "2 canned Colas + mixed pizza + shisha", "ru": "2 баночные Колы + микс пицца + кальян" }, 
+        "price": "29.90 ₼", 
+        "image": "" 
+      },
+      { 
+        "id": "st_lahmacun", 
+        "title": { "az": "Lahmacun Seti", "en": "Lahmacun Set", "ru": "Лахмаджун Сет" }, 
+        "desc": { "az": "2 banka Cola + 2 Lahmacun + qəlyan (saxsı)", "en": "2 canned Colas + 2 Lahmacuns + shisha", "ru": "2 баночные Колы + 2 лахмаджуна + кальян" }, 
+        "price": "19.90 ₼", 
+        "image": "" 
+      },
+      { 
+        "id": "st_doyumcul", 
+        "title": { "az": "Doyumcul Set", "en": "Filling Set", "ru": "Сытный Сет" }, 
+        "desc": { "az": "1L Cola + 4 Lahmacun + qəlyan (saxsı)", "en": "1L Cola + 4 Lahmacuns + shisha", "ru": "1Л Кола + 4 лахмаджуна + кальян" }, 
+        "price": "24.90 ₼", 
+        "image": "" 
+      },
+      { 
+        "id": "st_pive", 
+        "title": { "az": "Pivə Seti", "en": "Beer Set", "ru": "Пивной Сет" }, 
+        "desc": { "az": "2 ədəd 0.5L Xırdalan + cips + suxari + tum (yaquar) + saçaq pendir", "en": "2x 0.5L Xirdalan + chips + croutons + seeds + string cheese", "ru": "2x 0.5Л Хырдалан + чипсы + сухарики + семечки + сыр косичка" }, 
+        "price": "16.90 ₼", 
+        "image": "" 
+      },
+      { 
+        "id": "st_10", 
+        "title": { "az": "Set 10", "en": "Set 10", "ru": "Сет 10" }, 
+        "desc": { "az": "2 ədəd 0.5L pivə + cipsi + suxari + tum (yaquar) + saçaq pendir + qəlyan", "en": "2x 0.5L beer + chips + croutons + seeds + string cheese + shisha", "ru": "2x 0.5Л пива + чипсы + сухарики + семечки + сыр косичка + кальян" }, 
+        "price": "21.90 ₼", 
+        "image": "" 
+      }
+    ],
     "caylar": [
       {
         "id": "cy_1",
