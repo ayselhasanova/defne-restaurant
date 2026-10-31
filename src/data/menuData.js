@@ -19,7 +19,22 @@ import croissant from '../products/croissant.jpg';
 import popkek from '../products/popkek.jpg';
 
 import whitecherry from '../products/whitecherry.jpg';
-import rafaello from '../products/rafaello.jpg';
+import nutjam from '../products/nutjam.jpg';
+import strawberryjam from '../products/strawberryjam.jpg';
+import plombirjam from '../products/plombirjam.jpg';
+import snickersjam from '../products/snickersjam.jpg';
+
+import cola from '../products/cola.jpg';
+import fanta from '../products/fanta.jpg';
+import sprite from '../products/sprite.jpg';
+import spritebanka from '../products/spritebanka.jpg';
+import colabanka from '../products/colabanka.jpg';
+import fantabanka from '../products/fantabanka.jpg';
+import fusetea from '../products/fusetea.jpg';
+import fuseteabanka from '../products/fuseteabanka.jpg';
+import moxito from '../products/moxito.jpg';
+import juice from '../products/juice.jpg';
+
 
 export const menuData = {
   "restaurant": {
@@ -40,7 +55,7 @@ export const menuData = {
   ],
   "categories": [
     { "id": "caylar", "name": { "az": "Çaylar", "en": "Teas", "ru": "Чай" }, "icon": "Wine" },
-    { "id": "cay_sirniyyat", "name": { "az": "Çay + Şirniyyatlar", "en": "Tea & Sweets", "ru": "Чай и сладости" }, "icon": "Cake" },
+    { "id": "sirniyyat", "name": { "az": "Şirniyyatlar", "en": "Sweets", "ru": "Сладости" }, "icon": "Cake" },
     { "id": "murebbeler", "name": { "az": "Mürəbbələr", "en": "Jams", "ru": "Варенье" }, "icon": "Cake" },
     { "id": "alkoqolsuz", "name": { "az": "Alkoqolsuz İçkilər", "en": "Soft Drinks", "ru": "Безалкогольные" }, "icon": "Wine" },
     { "id": "enerji", "name": { "az": "Enerji İçkiləri", "en": "Energy Drinks", "ru": "Энергетики" }, "icon": "Wine" },
@@ -54,36 +69,36 @@ export const menuData = {
   ],
   "items": {
     "caylar": [
-      { 
-        "id": "cy_1", 
-        "title": { "az": "Qara çay", "en": "Black tea", "ru": "Черный чай" }, 
-        "desc": { "az": "Klassik dəmləmə qara çay", "en": "Classic brewed black tea", "ru": "Классический заварной черный чай" }, 
-        "price": "4.00 ₼", 
-        "image": teaImage 
+      {
+        "id": "cy_1",
+        "title": { "az": "Qara çay", "en": "Black tea", "ru": "Черный чай" },
+        "desc": { "az": "Klassik dəmləmə qara çay", "en": "Classic brewed black tea", "ru": "Классический заварной черный чай" },
+        "price": "4.00 ₼",
+        "image": teaImage
       },
-      { 
-        "id": "cy_2", 
-        "title": { "az": "Yaşıl çay", "en": "Green tea", "ru": "Зеленый чай" }, 
-        "desc": { "az": "Təravətli yaşıl çay dəmləməsi", "en": "Fresh green tea brew", "ru": "Свежий зеленый чай" }, 
-        "price": "5.00 ₼", 
-        "image": greenteaImage 
+      {
+        "id": "cy_2",
+        "title": { "az": "Yaşıl çay", "en": "Green tea", "ru": "Зеленый чай" },
+        "desc": { "az": "Təravətli yaşıl çay dəmləməsi", "en": "Fresh green tea brew", "ru": "Свежий зеленый чай" },
+        "price": "5.00 ₼",
+        "image": greenteaImage
       },
-      { 
-        "id": "cy_3", 
-        "title": { "az": "Ədviyyatlı çay", "en": "Spiced tea", "ru": "Пряный чай" }, 
-        "desc": { "az": "Seçilmiş ədviyyat və ot əlavələri ilə (Kəklikotu, melissa, jasmin, darçın, nanə, qızılgül, şaftalı, 1001 gecə çayı, manqo, mixək, sitrus)", "en": "With selected herbs and spices", "ru": "С травами и специями" }, 
-        "price": "6.00 ₼", 
-        "image": spicyteaImage 
+      {
+        "id": "cy_3",
+        "title": { "az": "Ədviyyatlı çay", "en": "Spiced tea", "ru": "Пряный чай" },
+        "desc": { "az": "Seçilmiş ədviyyat və ot əlavələri ilə (Kəklikotu, melissa, jasmin, darçın, nanə, qızılgül, şaftalı, 1001 gecə çayı, manqo, mixək, sitrus)", "en": "With selected herbs and spices", "ru": "С травами и специями" },
+        "price": "6.00 ₼",
+        "image": spicyteaImage
       },
-      { 
-        "id": "cy_4", 
-        "title": { "az": "Meyvəli çay", "en": "Fruity tea", "ru": "Фруктовый чай" }, 
-        "desc": { "az": "Zəngin meyvə aromalı çay", "en": "Rich fruit flavored tea", "ru": "Чай с богатым фруктовым ароматом" }, 
-        "price": "8.00 ₼", 
-        "image": fruitteaImage 
+      {
+        "id": "cy_4",
+        "title": { "az": "Meyvəli çay", "en": "Fruity tea", "ru": "Фруктовый чай" },
+        "desc": { "az": "Zəngin meyvə aromalı çay", "en": "Rich fruit flavored tea", "ru": "Чай с богатым фруктовым ароматом" },
+        "price": "8.00 ₼",
+        "image": fruitteaImage
       }
     ],
-    "cay_sirniyyat": [
+    "sirniyyat": [
       { "id": "cs_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Alpengold" }, "desc": { "az": "Standart şokolad", "en": "Standard chocolate", "ru": "Шоколад" }, "price": "6.00 ₼", "image": alpengold },
       { "id": "cs_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Snickers" }, "desc": { "az": "Fıstıqlı baton", "en": "Peanut chocolate bar", "ru": "Шоколадный батончик с арахисом" }, "price": "4.00 ₼", "image": snickers },
       { "id": "cs_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Bounty" }, "desc": { "az": "Kokos içlikli şokolad", "en": "Coconut filled chocolate", "ru": "Шоколад с кокосовой начинкой" }, "price": "4.00 ₼", "image": bounty },
@@ -95,23 +110,23 @@ export const menuData = {
       { "id": "cs_9", "title": { "az": "Pop kek", "en": "Pop cake", "ru": "Поп кек" }, "desc": { "az": "Şirin pop kek", "en": "Sweet pop cake", "ru": "Сладкий кекс" }, "price": "6.00 ₼", "image": popkek }
     ],
     "murebbeler": [
-      { "id": "mr_1", "title": { "az": "Qoz mürəbbəsi", "en": "Walnut jam", "ru": "Варенье из грецкого ореха" }, "desc": { "az": "Ev üsulu qoz mürəbbəsi", "en": "Homemade walnut jam", "ru": "Домашнее варенье из грецкого ореха" }, "price": "7.00 ₼", "image": whitecherry },
-      { "id": "mr_2", "title": { "az": "Çiyələk mürəbbəsi", "en": "Strawberry jam", "ru": "Клубничное варенье" }, "desc": { "az": "Təbii çiyələk mürəbbəsi", "en": "Natural strawberry jam", "ru": "Натуральное клубничное варенье" }, "price": "6.00 ₼", "image": "" },
-      { "id": "mr_3", "title": { "az": "Snickers mürəbbəsi", "en": "Snickers jam", "ru": "Варенье Сникерс" }, "desc": { "az": "Xüsusi hazırlanmış desert mürəbbə", "en": "Special dessert jam", "ru": "Специальное десертное варенье" }, "price": "6.00 ₼", "image": "" },
-      { "id": "mr_4", "title": { "az": "Plombir mürəbbəsi", "en": "Plombir jam", "ru": "Варенье Пломбир" }, "desc": { "az": "Krem dadlı mürəbbə", "en": "Cream flavored jam", "ru": "Варенье со вкусом пломбира" }, "price": "6.00 ₼", "image": "" },
-      { "id": "mr_5", "title": { "az": "Ağ gilas mürəbbəsi", "en": "White cherry jam", "ru": "Варенье из белой черешни" }, "desc": { "az": "Ənənəvi ağ gilas mürəbbəsi", "en": "Traditional white cherry jam", "ru": "Традиционное варенье из белой черешни" }, "price": "6.00 ₼", "image": rafaello }
+      { "id": "mr_1", "title": { "az": "Qoz mürəbbəsi", "en": "Walnut jam", "ru": "Варенье из грецкого ореха" }, "desc": { "az": "Ev üsulu qoz mürəbbəsi", "en": "Homemade walnut jam", "ru": "Домашнее варенье из грецкого ореха" }, "price": "7.00 ₼", "image": nutjam },
+      { "id": "mr_2", "title": { "az": "Çiyələk mürəbbəsi", "en": "Strawberry jam", "ru": "Клубничное варенье" }, "desc": { "az": "Təbii çiyələk mürəbbəsi", "en": "Natural strawberry jam", "ru": "Натуральное клубничное варенье" }, "price": "6.00 ₼", "image":strawberryjam },
+      { "id": "mr_3", "title": { "az": "Snickers mürəbbəsi", "en": "Snickers jam", "ru": "Варенье Сникерс" }, "desc": { "az": "Xüsusi hazırlanmış desert mürəbbə", "en": "Special dessert jam", "ru": "Специальное десертное варенье" }, "price": "6.00 ₼", "image": snickersjam },
+      { "id": "mr_4", "title": { "az": "Plombir mürəbbəsi", "en": "Plombir jam", "ru": "Варенье Пломбир" }, "desc": { "az": "Krem dadlı mürəbbə", "en": "Cream flavored jam", "ru": "Варенье со вкусом пломбира" }, "price": "6.00 ₼", "image": plombirjam },
+      { "id": "mr_5", "title": { "az": "Ağ gilas mürəbbəsi", "en": "White cherry jam", "ru": "Варенье из белой черешни" }, "desc": { "az": "Ənənəvi ağ gilas mürəbbəsi", "en": "Traditional white cherry jam", "ru": "Традиционное варенье из белой черешни" }, "price": "6.00 ₼", "image": whitecherry }
     ],
     "alkoqolsuz": [
-      { "id": "a_1", "title": { "az": "Cola (1L)", "en": "Cola (1L)", "ru": "Кола (1Л)" }, "desc": { "az": "Sərinləşdirici qazlı içki 1 litr", "en": "Refreshing soft drink 1L", "ru": "Освежающий газированный напиток 1л" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_2", "title": { "az": "Fanta (1L)", "en": "Fanta (1L)", "ru": "Фанта (1Л)" }, "desc": { "az": "Portağal qazlı içki 1 litr", "en": "Orange soft drink 1L", "ru": "Апельсиновый напиток 1л" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_3", "title": { "az": "Sprite (1L)", "en": "Sprite (1L)", "ru": "Спрайт (1Л)" }, "desc": { "az": "Limon qazlı içki 1 litr", "en": "Lemon soft drink 1L", "ru": "Лимонный напиток 1л" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_4", "title": { "az": "Cola (Banka)", "en": "Cola (Can)", "ru": "Кола (Жерстяная банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_5", "title": { "az": "Fanta (Banka)", "en": "Fanta (Can)", "ru": "Фанта (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_6", "title": { "az": "Sprite (Banka)", "en": "Sprite (Can)", "ru": "Спрайт (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_7", "title": { "az": "Fuse tea (0.5L)", "en": "Fuse tea (0.5L)", "ru": "Фьюз чай (0.5Л)" }, "desc": { "az": "Soyuq çay 0.5 litr", "en": "Iced tea 0.5L", "ru": "Холодный чай 0.5л" }, "price": "2.50 ₼", "image": "" },
-      { "id": "a_8", "title": { "az": "Fuse tea (Banka)", "en": "Fuse tea (Can)", "ru": "Фьюз чай (Банка)" }, "desc": { "az": "Banka soyuq çay", "en": "Canned iced tea", "ru": "Холодный чай в банке" }, "price": "3.00 ₼", "image": "" },
-      { "id": "a_9", "title": { "az": "Meyvə şirəsi (1L)", "en": "Fruit juice (1L)", "ru": "Фруктовый сок (1Л)" }, "desc": { "az": "Qutu meyvə şirəsi 1 litr", "en": "Box fruit juice 1L", "ru": "Фруктовый сок в пакете 1л" }, "price": "4.00 ₼", "image": "" },
-      { "id": "a_10", "title": { "az": "Moxito (Qrafin)", "en": "Mojito (Pitcher)", "ru": "Мохито (Кувшин)" }, "desc": { "az": "Sərinləşdirici moxito qrafində", "en": "Refreshing mojito in pitcher", "ru": "Освежающий мохито в кувшине" }, "price": "6.00 ₼", "image": "" }
+      { "id": "a_1", "title": { "az": "Cola (1L)", "en": "Cola (1L)", "ru": "Кола (1Л)" }, "desc": { "az": "Sərinləşdirici qazlı içki 1 litr", "en": "Refreshing soft drink 1L", "ru": "Освежающий газированный напиток 1л" }, "price": "3.00 ₼", "image": cola },
+      { "id": "a_2", "title": { "az": "Fanta (1L)", "en": "Fanta (1L)", "ru": "Фанта (1Л)" }, "desc": { "az": "Portağal qazlı içki 1 litr", "en": "Orange soft drink 1L", "ru": "Апельсиновый напиток 1л" }, "price": "3.00 ₼", "image": fanta },
+      { "id": "a_3", "title": { "az": "Sprite (1L)", "en": "Sprite (1L)", "ru": "Спрайт (1Л)" }, "desc": { "az": "Limon qazlı içki 1 litr", "en": "Lemon soft drink 1L", "ru": "Лимонный напиток 1л" }, "price": "3.00 ₼", "image": sprite },
+      { "id": "a_4", "title": { "az": "Cola (Banka)", "en": "Cola (Can)", "ru": "Кола (Жерстяная банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": colabanka },
+      { "id": "a_5", "title": { "az": "Fanta (Banka)", "en": "Fanta (Can)", "ru": "Фанта (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": fantabanka },
+      { "id": "a_6", "title": { "az": "Sprite (Banka)", "en": "Sprite (Can)", "ru": "Спрайт (Банка)" }, "desc": { "az": "Banka qazlı içki", "en": "Canned soft drink", "ru": "Газированный напиток в банке" }, "price": "3.00 ₼", "image": spritebanka },
+      { "id": "a_7", "title": { "az": "Fuse tea (0.5L)", "en": "Fuse tea (0.5L)", "ru": "Фьюз чай (0.5Л)" }, "desc": { "az": "Soyuq çay 0.5 litr", "en": "Iced tea 0.5L", "ru": "Холодный чай 0.5л" }, "price": "2.50 ₼", "image": fusetea },
+      { "id": "a_8", "title": { "az": "Fuse tea (Banka)", "en": "Fuse tea (Can)", "ru": "Фьюз чай (Банка)" }, "desc": { "az": "Banka soyuq çay", "en": "Canned iced tea", "ru": "Холодный чай в банке" }, "price": "3.00 ₼", "image": fuseteabanka },
+      { "id": "a_9", "title": { "az": "Meyvə şirəsi (1L)", "en": "Fruit juice (1L)", "ru": "Фруктовый сок (1Л)" }, "desc": { "az": "Qutu meyvə şirəsi 1 litr", "en": "Box fruit juice 1L", "ru": "Фруктовый сок в пакете 1л" }, "price": "4.00 ₼", "image": juice },
+      { "id": "a_10", "title": { "az": "Moxito (Qrafin)", "en": "Mojito (Pitcher)", "ru": "Мохито (Кувшин)" }, "desc": { "az": "Sərinləşdirici moxito qrafində", "en": "Refreshing mojito in pitcher", "ru": "Освежающий мохито в кувшине" }, "price": "6.00 ₼", "image": moxito }
     ],
     "enerji": [
       { "id": "en_1", "title": { "az": "Red bull", "en": "Red bull", "ru": "Red bull" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "5.00 ₼", "image": "" },
