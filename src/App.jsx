@@ -293,9 +293,9 @@ export default function App() {
                           : "bg-[#FFFDF9] border-[#C5A880]/30 hover:border-[#8C6D46]/70 shadow-sm"
                       }`}
                     >
-                      <div className={`relative h-70 m:h-75 overflow-hidden flex items-center justify-center border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
+                      <div className={`relative h-70 m:h-70 overflow-hidden flex items-center justify-center border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
                         {dish.image ? (
-                          <img src={dish.image} alt={t(dish.title)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                          <img src={dish.image} alt={t(dish.title)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"loading="lazy"/>
                         ) : (
                           <div className={`w-full h-full border flex flex-col items-center justify-center p-2 text-center ${isDarkMode ? "bg-[#0a0a0c] border-[#D4AF37]/20" : "bg-[#FAF6EE] border-[#C5A880]/20"}`}>
                             <Sparkles className="w-6 h-6 text-[#D4AF37]/50 mb-1" strokeWidth={1.5} />
@@ -396,7 +396,7 @@ export default function App() {
 
               <div className={`relative h-80 sm:h-120 w-full flex items-center justify-center shrink-0 border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
                 {selectedDish.image ? (
-                  <img src={selectedDish.image} alt={t(selectedDish.title)} className="w-full h-full object-cover" />
+                  <img src={selectedDish.image} alt={t(selectedDish.title)} className="w-full h-full object-cover"loading="lazy"/>
                 ) : (
                   <div className="flex flex-col items-center justify-center p-6 text-center">
                     <Sparkles className="w-12 h-12 text-[#D4AF37]/60 mb-2" strokeWidth={1.5} />
