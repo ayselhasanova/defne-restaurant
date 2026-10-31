@@ -68,6 +68,12 @@ import keshu from '../products/keshu.jpg';
 import puste from '../products/puste.jpg';
 import araxis from '../products/araxis.jpg';
 
+import tum from '../products/tum.jpg';
+import suxari from '../products/suxari.jpg';
+import chips from '../products/chips.jpg';
+import sacaqlipendir from '../products/sacaqlipendir.jpg';
+import qizardilmispendir from '../products/qizardilmispendir.jpg';
+
 
 export const menuData = {
   "restaurant": {
@@ -206,18 +212,18 @@ export const menuData = {
       { "id": "pv_3", "title": { "az": "Efes draft (0.33L)", "en": "Efes draft (0.33L)", "ru": "Efes draft (0.33Л)" }, "desc": { "az": "Şüşə yüngül pivə", "en": "Bottled draft beer", "ru": "Бутылочное легкое пиво" }, "price": "5.00 ₼", "image": "" }
     ],
     "pive_mezeleri": [
-      { "id": "pm_1", "title": { "az": "Yaquar tum", "en": "Yaguar seeds", "ru": "Семечки Ягуар" }, "desc": { "az": "Qovrulmuş tum", "en": "Roasted sunflower seeds", "ru": "Жареные семечки" }, "price": "3.00 ₼", "image": "" },
-      { "id": "pm_2", "title": { "az": "Suxari", "en": "Croutons", "ru": "Сухарики" }, "desc": { "az": "Duzlu ev suxarisi", "en": "Salted house croutons", "ru": "Соленые сухарики" }, "price": "3.00 ₼", "image": "" },
-      { "id": "pm_3", "title": { "az": "Çipsi", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy potato chips", "ru": "Хрустящие чипсы" }, "price": "4.00 ₼", "image": "" },
-      { "id": "pm_4", "title": { "az": "Saçaq pendir", "en": "String cheese", "ru": "Сыр косичка" }, "desc": { "az": "Təzə saçaq pendir", "en": "Fresh string cheese", "ru": "Свежий сыр косичка" }, "price": "5.00 ₼", "image": "" },
-      { "id": "pm_5", "title": { "az": "Qızardılmış saçaq pendir", "en": "Fried string cheese", "ru": "Жареный сыр косичка" }, "desc": { "az": "Xırtıldayan qızardılmış saçaq pendir", "en": "Crispy fried string cheese", "ru": "Хрустящий жареный сыр косичка" }, "price": "6.00 ₼", "image": "" }
+      { "id": "pm_1", "title": { "az": "Yaquar tum", "en": "Yaguar seeds", "ru": "Семечки Ягуар" }, "desc": { "az": "Qovrulmuş tum", "en": "Roasted sunflower seeds", "ru": "Жареные семечки" }, "price": "3.00 ₼", "image": tum },
+      { "id": "pm_2", "title": { "az": "Suxari", "en": "Croutons", "ru": "Сухарики" }, "desc": { "az": "Duzlu ev suxarisi", "en": "Salted house croutons", "ru": "Соленые сухарики" }, "price": "3.00 ₼", "image": suxari },
+      { "id": "pm_3", "title": { "az": "Çipsi", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy potato chips", "ru": "Хрустящие чипсы" }, "price": "4.00 ₼", "image": chips },
+      { "id": "pm_4", "title": { "az": "Saçaq pendir", "en": "String cheese", "ru": "Сыр косичка" }, "desc": { "az": "Təzə saçaq pendir", "en": "Fresh string cheese", "ru": "Свежий сыр косичка" }, "price": "5.00 ₼", "image": sacaqlipendir },
+      { "id": "pm_5", "title": { "az": "Qızardılmış saçaq pendir", "en": "Fried string cheese", "ru": "Жареный сыр косичка" }, "desc": { "az": "Xırtıldayan qızardılmış saçaq pendir", "en": "Crispy fried string cheese", "ru": "Хрустящий жареный сыр косичка" }, "price": "6.00 ₼", "image": qizardilmispendir }
     ],
     "fast_food": [
-      { "id": "ff_1", "title": { "az": "Sade lahmacun", "en": "Plain lahmacun", "ru": "Простой лахмаджун" }, "desc": { "az": "Klassik ənənəvi lahmacun", "en": "Classic traditional lahmacun", "ru": "Классический традиционный лахмаджун" }, "price": "4.40 ₼", "image": "" },
+      { "id": "ff_1", "title": { "az": "Sadə lahmacun", "en": "Plain lahmacun", "ru": "Простой лахмаджун" }, "desc": { "az": "Klassik ənənəvi lahmacun", "en": "Classic traditional lahmacun", "ru": "Классический традиционный лахмаджун" }, "price": "4.40 ₼", "image": "" },
       { "id": "ff_2", "title": { "az": "Pendirli lahmacun", "en": "Cheese lahmacun", "ru": "Лахмаджун с сыром" }, "desc": { "az": "Pendirli dadlı lahmacun", "en": "Lahmacun topped with cheese", "ru": "Лахмаджун с сыром" }, "price": "5.00 ₼", "image": "" },
       { "id": "ff_3", "title": { "az": "Fındıq lahmacun (6 eded)", "en": "Hazelnut lahmacun (6 pcs)", "ru": "Маленькие лахмаджуны (6 шт)" }, "desc": { "az": "Xırda ölçüdə 6 ədəd lahmacun", "en": "6 mini bite-sized lahmacuns", "ru": "6 мини-лахмаджунов" }, "price": "14.00 ₼", "image": "" },
       { "id": "ff_4", "title": { "az": "Pendirli pizza", "en": "Cheese pizza", "ru": "Сырная пицца" }, "desc": { "az": "Bol pendirli ləzzətli pizza", "en": "Cheesy delicious pizza", "ru": "Вкусная пицца с большим количеством сыра" }, "price": "15.00 ₼", "image": "" },
-      { "id": "ff_5", "title": { "az": "Etli pizza", "en": "Meat pizza", "ru": "Мясная пицца" }, "desc": { "az": "Ətli zəngin pizza", "en": "Rich pizza with meat", "ru": "Сытная пицца с мясом" }, "price": "18.00 ₼", "image": "" },
+      { "id": "ff_5", "title": { "az": "Ətli pizza", "en": "Meat pizza", "ru": "Мясная пицца" }, "desc": { "az": "Ətli zəngin pizza", "en": "Rich pizza with meat", "ru": "Сытная пицца с мясом" }, "price": "18.00 ₼", "image": "" },
       { "id": "ff_6", "title": { "az": "Toyuqlu pizza", "en": "Chicken pizza", "ru": "Куриная пицца" }, "desc": { "az": "Toyuq ətli ləzzətli pizza", "en": "Delicious pizza with chicken", "ru": "Вкусная пицца с курицей" }, "price": "17.00 ₼", "image": "" },
       { "id": "ff_7", "title": { "az": "Qarışıq pizza", "en": "Mixed pizza", "ru": "Микс пицца" }, "desc": { "az": "Qarışıq inqrediyentli xüsusi pizza", "en": "Special pizza with mixed toppings", "ru": "Специальная пицца с миксом ингредиентов" }, "price": "20.00 ₼", "image": "" }
     ],
