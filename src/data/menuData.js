@@ -44,6 +44,21 @@ import americano from '../products/americano.jpg';
 import maccofee from '../products/maccoffee.jpg';
 import hotchocolate from '../products/hotchocolate.jpg';
 
+import saxsishisha from '../products/saxsishisha.jpg';
+import appleshisha from '../products/appleshisha.jpg';
+import orangeshisha from '../products/orangeshisha.jpg';
+import grapefruitshisha from '../products/grapefruitshisha.jpg';
+
+import xurma from '../products/xurma.jpg';
+import driedbanana from '../products/driedbanana.jpg';
+import driedapple from '../products/driedapple.jpg';
+import driedpapaya from '../products/driedpapaya.jpg';
+import driedyogurt from '../products/driedyogurt.jpg';
+import driedmango from '../products/driedmango.jpg';
+import driedapricot from '../products/driedapricot.jpg';
+import driedqaysi from '../products/driedqaysi.jpg';
+import jelekonfeti from '../products/jelekonfeti.jpg';
+
 
 export const menuData = {
   "restaurant": {
@@ -74,7 +89,8 @@ export const menuData = {
     { "id": "cerezler", "name": { "az": "Çərəzlər", "en": "Nuts", "ru": "Орехи" }, "icon": "Utensils" },
     { "id": "pive", "name": { "az": "Pivə", "en": "Beer", "ru": "Пиво" }, "icon": "Wine" },
     { "id": "pive_mezeleri", "name": { "az": "Pivə Məzələri", "en": "Beer Snacks", "ru": "Закуски к пиву" }, "icon": "Utensils" },
-    { "id": "desert", "name": { "az": "Desert", "en": "Dessert", "ru": "Десерт" }, "icon": "Cake" }
+    { "id": "fast_food", "name": { "az": "Fast Food", "en": "Fast Food", "ru": "Фастфуд" }, "icon": "Utensils" },
+    { "id": "desert", "name": { "az": "Desert", "en": "Dessert", "ru": "Десерт" }, "icon": "Cake" },
   ],
   "items": {
     "caylar": [
@@ -149,21 +165,21 @@ export const menuData = {
       { "id": "kf_4", "title": { "az": "İsti şokolad", "en": "Hot chocolate", "ru": "Горячий шоколад" }, "desc": { "az": "Şokoladlı isti içki", "en": "Chocolate hot drink", "ru": "Шоколадный горячий напиток" }, "price": "2.00 ₼", "image": hotchocolate }
     ],
     "qelyanlar": [
-      { "id": "ql_1", "title": { "az": "Saxsı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
-      { "id": "ql_2", "title": { "az": "Alma", "en": "Apple shisha", "ru": "Яблочный кальян" }, "desc": { "az": "Təbii alma kasasında", "en": "In natural apple bowl", "ru": "На натуральном яблоке" }, "price": "15.00 ₼", "image": "" },
-      { "id": "ql_3", "title": { "az": "Qreyfrut", "en": "Grapefruit shisha", "ru": "Грейпфрутовый кальян" }, "desc": { "az": "Təbii qreyfrut kasasında", "en": "In natural grapefruit bowl", "ru": "На натуральном грейпфруте" }, "price": "18.00 ₼", "image": "" },
-      { "id": "ql_4", "title": { "az": "Portağal", "en": "Orange shisha", "ru": "Апельсиновый кальян" }, "desc": { "az": "Təbii portağal kasasında", "en": "In natural orange bowl", "ru": "На натуральном апельсине" }, "price": "18.00 ₼", "image": "" }
+      { "id": "ql_1", "title": { "az": "Saxsı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": saxsishisha },
+      { "id": "ql_2", "title": { "az": "Alma", "en": "Apple shisha", "ru": "Яблочный кальян" }, "desc": { "az": "Təbii alma kasasında", "en": "In natural apple bowl", "ru": "На натуральном яблоке" }, "price": "15.00 ₼", "image": appleshisha },
+      { "id": "ql_3", "title": { "az": "Qreyfrut", "en": "Grapefruit shisha", "ru": "Грейпфрутовый кальян" }, "desc": { "az": "Təbii qreyfrut kasasında", "en": "In natural grapefruit bowl", "ru": "На натуральном грейпфруте" }, "price": "18.00 ₼", "image": grapefruitshisha },
+      { "id": "ql_4", "title": { "az": "Portağal", "en": "Orange shisha", "ru": "Апельсиновый кальян" }, "desc": { "az": "Təbii portağal kasasında", "en": "In natural orange bowl", "ru": "На натуральном апельсине" }, "price": "18.00 ₼", "image": orangeshisha }
     ],
     "meyve_qurusu": [
-      { "id": "mq_1", "title": { "az": "Xurma", "en": "Dates", "ru": "Финики" }, "desc": { "az": "Qurudulmuş xurma", "en": "Dried dates", "ru": "Сушеные финики" }, "price": "3.00 ₼", "image": "" },
-      { "id": "mq_2", "title": { "az": "Banan qurusu", "en": "Dried banana", "ru": "Сушеный банан" }, "desc": { "az": "Xırtıldayan banan çipsləri", "en": "Crispy banana chips", "ru": "Хрустящие банановые чипсы" }, "price": "4.00 ₼", "image": "" },
-      { "id": "mq_3", "title": { "az": "Alma qurusu", "en": "Dried apple", "ru": "Сушеное яблоко" }, "desc": { "az": "Təbii alma dilimləri", "en": "Natural apple slices", "ru": "Натуральные дольки яблока" }, "price": "3.00 ₼", "image": "" },
-      { "id": "mq_4", "title": { "az": "Papaya qurusu", "en": "Dried papaya", "ru": "Сушеная папайя" }, "desc": { "az": "Şirin papaya tikələri", "en": "Sweet papaya pieces", "ru": "Сладкие кусочки папайи" }, "price": "2.00 ₼", "image": "" },
-      { "id": "mq_5", "title": { "az": "Yoğurt konfeti", "en": "Yogurt candy", "ru": "Йогуртовые конфеты" }, "desc": { "az": "Yoğurt örtüklü şirniyyat", "en": "Yogurt coated candy", "ru": "Конфеты в йогуртовой глазури" }, "price": "5.00 ₼", "image": "" },
-      { "id": "mq_6", "title": { "az": "Manqo qurusu", "en": "Dried mango", "ru": "Сушеное манго" }, "desc": { "az": "Qurudulmuş manqo dilimləri", "en": "Dried mango slices", "ru": "Сушеные дольки манго" }, "price": "3.00 ₼", "image": "" },
-      { "id": "mq_7", "title": { "az": "Ərik qurusu", "en": "Dried plum", "ru": "Сушеный чернослив" }, "desc": { "az": "Qurudulmuş erik", "en": "Dried plum", "ru": "Сушеный чернослив" }, "price": "4.00 ₼", "image": "" },
-      { "id": "mq_8", "title": { "az": "Qaysı", "en": "Dried apricot", "ru": "Курага" }, "desc": { "az": "Şirin qaysı qurusu", "en": "Sweet dried apricot", "ru": "Сладкая курага" }, "price": "5.00 ₼", "image": "" },
-      { "id": "mq_9", "title": { "az": "Jele konfeti", "en": "Jelly candy", "ru": "Желейные конфеты" }, "desc": { "az": "Rəngli jele konfetlər", "en": "Colorful jelly candies", "ru": "Цветные желейные конфеты" }, "price": "5.00 ₼", "image": "" }
+      { "id": "mq_1", "title": { "az": "Xurma", "en": "Dates", "ru": "Финики" }, "desc": { "az": "Qurudulmuş xurma", "en": "Dried dates", "ru": "Сушеные финики" }, "price": "3.00 ₼", "image": xurma },
+      { "id": "mq_2", "title": { "az": "Banan qurusu", "en": "Dried banana", "ru": "Сушеный банан" }, "desc": { "az": "Xırtıldayan banan çipsləri", "en": "Crispy banana chips", "ru": "Хрустящие банановые чипсы" }, "price": "4.00 ₼", "image": driedbanana },
+      { "id": "mq_3", "title": { "az": "Alma qurusu", "en": "Dried apple", "ru": "Сушеное яблоко" }, "desc": { "az": "Təbii alma dilimləri", "en": "Natural apple slices", "ru": "Натуральные дольки яблока" }, "price": "3.00 ₼", "image": driedapple },
+      { "id": "mq_4", "title": { "az": "Papaya qurusu", "en": "Dried papaya", "ru": "Сушеная папайя" }, "desc": { "az": "Şirin papaya tikələri", "en": "Sweet papaya pieces", "ru": "Сладкие кусочки папайи" }, "price": "2.00 ₼", "image": driedpapaya },
+      { "id": "mq_5", "title": { "az": "Yoğurt konfeti", "en": "Yogurt candy", "ru": "Йогуртовые конфеты" }, "desc": { "az": "Yoğurt örtüklü şirniyyat", "en": "Yogurt coated candy", "ru": "Конфеты в йогуртовой глазури" }, "price": "5.00 ₼", "image": driedyogurt },
+      { "id": "mq_6", "title": { "az": "Manqo qurusu", "en": "Dried mango", "ru": "Сушеное манго" }, "desc": { "az": "Qurudulmuş manqo dilimləri", "en": "Dried mango slices", "ru": "Сушеные дольки манго" }, "price": "3.00 ₼", "image": driedmango },
+      { "id": "mq_7", "title": { "az": "Ərik qurusu", "en": "Dried plum", "ru": "Сушеный чернослив" }, "desc": { "az": "Qurudulmuş erik", "en": "Dried plum", "ru": "Сушеный чернослив" }, "price": "4.00 ₼", "image": driedapricot },
+      { "id": "mq_8", "title": { "az": "Qaysı", "en": "Dried apricot", "ru": "Курага" }, "desc": { "az": "Şirin qaysı qurusu", "en": "Sweet dried apricot", "ru": "Сладкая курага" }, "price": "5.00 ₼", "image": driedqaysi },
+      { "id": "mq_9", "title": { "az": "Jele konfeti", "en": "Jelly candy", "ru": "Желейные конфеты" }, "desc": { "az": "Rəngli jele konfetlər", "en": "Colorful jelly candies", "ru": "Цветные желейные конфеты" }, "price": "5.00 ₼", "image": jelekonfeti }
     ],
     "cerezler": [
       { "id": "cr_1", "title": { "az": "Ağ kişmiş", "en": "White raisins", "ru": "Белый изюм" }, "desc": { "az": "Təmizlənmiş ağ kişmiş", "en": "Peeled white raisins", "ru": "Очищенный белый изюм" }, "price": "3.50 ₼", "image": "" },
@@ -183,7 +199,18 @@ export const menuData = {
     "pive_mezeleri": [
       { "id": "pm_1", "title": { "az": "Yaquar tum", "en": "Yaguar seeds", "ru": "Семечки Ягуар" }, "desc": { "az": "Qovrulmuş tum", "en": "Roasted sunflower seeds", "ru": "Жареные семечки" }, "price": "3.00 ₼", "image": "" },
       { "id": "pm_2", "title": { "az": "Suxari", "en": "Croutons", "ru": "Сухарики" }, "desc": { "az": "Duzlu ev suxarisi", "en": "Salted house croutons", "ru": "Соленые сухарики" }, "price": "3.00 ₼", "image": "" },
-      { "id": "pm_3", "title": { "az": "Çipsi", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy potato chips", "ru": "Хрустящие чипсы" }, "price": "4.00 ₼", "image": "" }
+      { "id": "pm_3", "title": { "az": "Çipsi", "en": "Chips", "ru": "Чипсы" }, "desc": { "az": "Xırtıldayan çips", "en": "Crispy potato chips", "ru": "Хрустящие чипсы" }, "price": "4.00 ₼", "image": "" },
+      { "id": "pm_4", "title": { "az": "Saçaq pendir", "en": "String cheese", "ru": "Сыр косичка" }, "desc": { "az": "Təzə saçaq pendir", "en": "Fresh string cheese", "ru": "Свежий сыр косичка" }, "price": "5.00 ₼", "image": "" },
+      { "id": "pm_5", "title": { "az": "Qızardılmış saçaq pendir", "en": "Fried string cheese", "ru": "Жареный сыр косичка" }, "desc": { "az": "Xırtıldayan qızardılmış saçaq pendir", "en": "Crispy fried string cheese", "ru": "Хрустящий жареный сыр косичка" }, "price": "6.00 ₼", "image": "" }
+    ],
+    "fast_food": [
+      { "id": "ff_1", "title": { "az": "Sade lahmacun", "en": "Plain lahmacun", "ru": "Простой лахмаджун" }, "desc": { "az": "Klassik ənənəvi lahmacun", "en": "Classic traditional lahmacun", "ru": "Классический традиционный лахмаджун" }, "price": "4.40 ₼", "image": "" },
+      { "id": "ff_2", "title": { "az": "Pendirli lahmacun", "en": "Cheese lahmacun", "ru": "Лахмаджун с сыром" }, "desc": { "az": "Pendirli dadlı lahmacun", "en": "Lahmacun topped with cheese", "ru": "Лахмаджун с сыром" }, "price": "5.00 ₼", "image": "" },
+      { "id": "ff_3", "title": { "az": "Fındıq lahmacun (6 eded)", "en": "Hazelnut lahmacun (6 pcs)", "ru": "Маленькие лахмаджуны (6 шт)" }, "desc": { "az": "Xırda ölçüdə 6 ədəd lahmacun", "en": "6 mini bite-sized lahmacuns", "ru": "6 мини-лахмаджунов" }, "price": "14.00 ₼", "image": "" },
+      { "id": "ff_4", "title": { "az": "Pendirli pizza", "en": "Cheese pizza", "ru": "Сырная пицца" }, "desc": { "az": "Bol pendirli ləzzətli pizza", "en": "Cheesy delicious pizza", "ru": "Вкусная пицца с большим количеством сыра" }, "price": "15.00 ₼", "image": "" },
+      { "id": "ff_5", "title": { "az": "Etli pizza", "en": "Meat pizza", "ru": "Мясная пицца" }, "desc": { "az": "Ətli zəngin pizza", "en": "Rich pizza with meat", "ru": "Сытная пицца с мясом" }, "price": "18.00 ₼", "image": "" },
+      { "id": "ff_6", "title": { "az": "Toyuqlu pizza", "en": "Chicken pizza", "ru": "Куриная пицца" }, "desc": { "az": "Toyuq ətli ləzzətli pizza", "en": "Delicious pizza with chicken", "ru": "Вкусная пицца с курицей" }, "price": "17.00 ₼", "image": "" },
+      { "id": "ff_7", "title": { "az": "Qarışıq pizza", "en": "Mixed pizza", "ru": "Микс пицца" }, "desc": { "az": "Qarışıq inqrediyentli xüsusi pizza", "en": "Special pizza with mixed toppings", "ru": "Специальная пицца с миксом ингредиентов" }, "price": "20.00 ₼", "image": "" }
     ],
     "desert": [
       { "id": "ds_1", "title": { "az": "Meyvə (orta)", "en": "Medium fruit plate", "ru": "Фруктовая тарелка (средняя)" }, "desc": { "az": "Mövsüm meyvələri çeşidi", "en": "Seasonal fruit assortment", "ru": "Ассорти сезонных фруктов" }, "price": "15.00 ₼", "image": "" },
