@@ -59,6 +59,15 @@ import driedapricot from '../products/driedapricot.jpg';
 import driedqaysi from '../products/driedqaysi.jpg';
 import jelekonfeti from '../products/jelekonfeti.jpg';
 
+import agkismis from '../products/agkismis.jpg';
+import qarakismis from '../products/qarakismis.jpg';
+import qoz from '../products/qoz.jpg';
+import findiq from '../products/findiq.jpg';
+import badam from '../products/badam.jpg';
+import keshu from '../products/keshu.jpg';
+import puste from '../products/puste.jpg';
+import araxis from '../products/araxis.jpg';
+
 
 export const menuData = {
   "restaurant": {
@@ -182,14 +191,14 @@ export const menuData = {
       { "id": "mq_9", "title": { "az": "Jele konfeti", "en": "Jelly candy", "ru": "Желейные конфеты" }, "desc": { "az": "Rəngli jele konfetlər", "en": "Colorful jelly candies", "ru": "Цветные желейные конфеты" }, "price": "5.00 ₼", "image": jelekonfeti }
     ],
     "cerezler": [
-      { "id": "cr_1", "title": { "az": "Ağ kişmiş", "en": "White raisins", "ru": "Белый изюм" }, "desc": { "az": "Təmizlənmiş ağ kişmiş", "en": "Peeled white raisins", "ru": "Очищенный белый изюм" }, "price": "3.50 ₼", "image": "" },
-      { "id": "cr_2", "title": { "az": "Qara kişmiş", "en": "Black raisins", "ru": "Черный изюм" }, "desc": { "az": "Seçilmiş qara kişmiş", "en": "Selected black raisins", "ru": "Отборный черный изюм" }, "price": "3.50 ₼", "image": "" },
-      { "id": "cr_3", "title": { "az": "Qoz", "en": "Walnut", "ru": "Грецкий орех" }, "desc": { "az": "Təmizlənmiş qoz ləpəsi", "en": "Peeled walnut kernels", "ru": "Очищенные ядра грецкого ореха" }, "price": "5.00 ₼", "image": "" },
-      { "id": "cr_4", "title": { "az": "Fındıq", "en": "Hazelnut", "ru": "Фундук" }, "desc": { "az": "Qovrulmuş fındıq", "en": "Roasted hazelnuts", "ru": "Жареный фундук" }, "price": "4.00 ₼", "image": "" },
-      { "id": "cr_5", "title": { "az": "Badam", "en": "Almond", "ru": "Миндаль" }, "desc": { "az": "Seçilmiş badam ləpəsi", "en": "Selected almond kernels", "ru": "Отборный миндаль" }, "price": "5.00 ₼", "image": "" },
-      { "id": "cr_6", "title": { "az": "Keşyu", "en": "Cashew", "ru": "Кешью" }, "desc": { "az": "Xırtıldayan keşyu", "en": "Crispy cashews", "ru": "Хрустящий кешью" }, "price": "5.00 ₼", "image": "" },
-      { "id": "cr_7", "title": { "az": "Püstə", "en": "Pistachio", "ru": "Фисташки" }, "desc": { "az": "Duzlu püstə ləpəsi", "en": "Salted pistachios", "ru": "Соленые фисташки" }, "price": "7.50 ₼", "image": "" },
-      { "id": "cr_8", "title": { "az": "Araxis", "en": "Peanuts", "ru": "Арахис" }, "desc": { "az": "Qovrulmuş araxis", "en": "Roasted peanuts", "ru": "Жареный арахис" }, "price": "3.00 ₼", "image": "" }
+      { "id": "cr_1", "title": { "az": "Ağ kişmiş", "en": "White raisins", "ru": "Белый изюм" }, "desc": { "az": "Təmizlənmiş ağ kişmiş", "en": "Peeled white raisins", "ru": "Очищенный белый изюм" }, "price": "3.50 ₼", "image": agkismis },
+      { "id": "cr_2", "title": { "az": "Qara kişmiş", "en": "Black raisins", "ru": "Черный изюм" }, "desc": { "az": "Seçilmiş qara kişmiş", "en": "Selected black raisins", "ru": "Отборный черный изюм" }, "price": "3.50 ₼", "image": qarakismis },
+      { "id": "cr_3", "title": { "az": "Qoz", "en": "Walnut", "ru": "Грецкий орех" }, "desc": { "az": "Təmizlənmiş qoz ləpəsi", "en": "Peeled walnut kernels", "ru": "Очищенные ядра грецкого ореха" }, "price": "5.00 ₼", "image": qoz },
+      { "id": "cr_4", "title": { "az": "Fındıq", "en": "Hazelnut", "ru": "Фундук" }, "desc": { "az": "Qovrulmuş fındıq", "en": "Roasted hazelnuts", "ru": "Жареный фундук" }, "price": "4.00 ₼", "image": findiq },
+      { "id": "cr_5", "title": { "az": "Badam", "en": "Almond", "ru": "Миндаль" }, "desc": { "az": "Seçilmiş badam ləpəsi", "en": "Selected almond kernels", "ru": "Отборный миндаль" }, "price": "5.00 ₼", "image": badam },
+      { "id": "cr_6", "title": { "az": "Keşyu", "en": "Cashew", "ru": "Кешью" }, "desc": { "az": "Xırtıldayan keşyu", "en": "Crispy cashews", "ru": "Хрустящий кешью" }, "price": "5.00 ₼", "image": keshu },
+      { "id": "cr_7", "title": { "az": "Püstə", "en": "Pistachio", "ru": "Фисташки" }, "desc": { "az": "Duzlu püstə ləpəsi", "en": "Salted pistachios", "ru": "Соленые фисташки" }, "price": "7.50 ₼", "image": puste },
+      { "id": "cr_8", "title": { "az": "Araxis", "en": "Peanuts", "ru": "Арахис" }, "desc": { "az": "Qovrulmuş araxis", "en": "Roasted peanuts", "ru": "Жареный арахис" }, "price": "3.00 ₼", "image": araxis }
     ],
     "pive": [
       { "id": "pv_1", "title": { "az": "Xırdalan (0.5L)", "en": "Xirdalan (0.5L)", "ru": "Хырдалан (0.5Л)" }, "desc": { "az": "Şüşə qablaşdırma yerli pivə", "en": "Bottled local beer", "ru": "Бутылочное местное пиво" }, "price": "4.50 ₼", "image": "" },
