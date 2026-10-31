@@ -293,7 +293,7 @@ export default function App() {
                           : "bg-[#FFFDF9] border-[#C5A880]/30 hover:border-[#8C6D46]/70 shadow-sm"
                       }`}
                     >
-                      <div className={`relative h-55 sm:h-58 overflow-hidden flex items-center justify-center border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
+                      <div className={`relative h-70 m:h-75 overflow-hidden flex items-center justify-center border-b ${isDarkMode ? "bg-[#0c0c0e] border-[#D4AF37]/20" : "bg-[#F3EDE2] border-[#C5A880]/20"}`}>
                         {dish.image ? (
                           <img src={dish.image} alt={t(dish.title)} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                         ) : (
