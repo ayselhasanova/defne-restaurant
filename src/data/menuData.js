@@ -100,6 +100,11 @@ import set7 from '../products/set7.jpg';
 import set8 from '../products/set8.jpg';
 import set9 from '../products/set9.jpg';
 import serinset from '../products/serinset.jpg';
+import pizzaseti from '../products/pizzaseti.jpg';
+import lahmacunseti from '../products/lahmacunseti.jpg';
+import doyumculset from '../products/doyumculset.jpg';
+import beerset from '../products/beerset.jpg';
+import set10 from '../products/set10.jpg';
 
 
 export const menuData = {
@@ -219,35 +224,35 @@ export const menuData = {
         "title": { "az": "Pizza Seti", "en": "Pizza Set", "ru": "Пицца Сет" }, 
         "desc": { "az": "2 banka Cola + qarışıq pizza + qəlyan (saxsı)", "en": "2 canned Colas + mixed pizza + shisha", "ru": "2 баночные Колы + микс пицца + кальян" }, 
         "price": "29.90 ₼", 
-        "image": "" 
+        "image": pizzaseti 
       },
       { 
         "id": "st_lahmacun", 
         "title": { "az": "Lahmacun Seti", "en": "Lahmacun Set", "ru": "Лахмаджун Сет" }, 
         "desc": { "az": "2 banka Cola + 2 Lahmacun + qəlyan (saxsı)", "en": "2 canned Colas + 2 Lahmacuns + shisha", "ru": "2 баночные Колы + 2 лахмаджуна + кальян" }, 
         "price": "19.90 ₼", 
-        "image": "" 
+        "image": lahmacunseti 
       },
       { 
         "id": "st_doyumcul", 
         "title": { "az": "Doyumcul Set", "en": "Filling Set", "ru": "Сытный Сет" }, 
         "desc": { "az": "1L Cola + 4 Lahmacun + qəlyan (saxsı)", "en": "1L Cola + 4 Lahmacuns + shisha", "ru": "1Л Кола + 4 лахмаджуна + кальян" }, 
         "price": "24.90 ₼", 
-        "image": "" 
+        "image": doyumculset 
       },
       { 
         "id": "st_pive", 
         "title": { "az": "Pivə Seti", "en": "Beer Set", "ru": "Пивной Сет" }, 
         "desc": { "az": "2 ədəd 0.5L Xırdalan + cips + suxari + tum (yaquar) + saçaq pendir", "en": "2x 0.5L Xirdalan + chips + croutons + seeds + string cheese", "ru": "2x 0.5Л Хырдалан + чипсы + сухарики + семечки + сыр косичка" }, 
         "price": "16.90 ₼", 
-        "image": "" 
+        "image": beerset 
       },
       { 
         "id": "st_10", 
         "title": { "az": "Set 10", "en": "Set 10", "ru": "Сет 10" }, 
         "desc": { "az": "2 ədəd 0.5L pivə + cipsi + suxari + tum (yaquar) + saçaq pendir + qəlyan", "en": "2x 0.5L beer + chips + croutons + seeds + string cheese + shisha", "ru": "2x 0.5Л пива + чипсы + сухарики + семечки + сыр косичка + кальян" }, 
         "price": "21.90 ₼", 
-        "image": "" 
+        "image": set10 
       }
     ],
     "caylar": [

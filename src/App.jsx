@@ -152,7 +152,7 @@ export default function App() {
       <div className={`w-full max-w-full sm:max-w-[540px] md:max-w-[680px] lg:max-w-[900px] mx-auto min-h-screen flex flex-col relative pb-32 shadow-2xl transition-colors duration-300 ${isDarkMode ? "bg-[#09090a] border-x border-[#D4AF37]/15" : "bg-[#FFFDF9] border-x border-[#C5A880]/30"}`}>
         
         {/* THEME TOGGLE BUTTON (TOP RIGHT) */}
-        <div className="absolute top-4 right-4 z-30">
+        {/* <div className="absolute top-4 right-4 z-30">
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle Theme"
@@ -164,7 +164,7 @@ export default function App() {
           >
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-        </div>
+        </div> */}
 
         {/* HEADER BRANDING */}
         <header className={`pt-6 pb-3 px-4 sm:px-8 text-center flex flex-col items-center relative overflow-hidden transition-colors duration-300 ${isDarkMode ? "bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.14)_0%,transparent_68%)]" : "bg-[radial-gradient(circle_at_center,rgba(197,168,128,0.18)_0%,transparent_68%)]"}`}>
