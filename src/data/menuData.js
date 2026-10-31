@@ -35,6 +35,15 @@ import fuseteabanka from '../products/fuseteabanka.jpg';
 import moxito from '../products/moxito.jpg';
 import juice from '../products/juice.jpg';
 
+import redbull from '../products/redbull.jpg';
+import bizon from '../products/bizon.jpg';
+import monster from '../products/monster.jpg';
+
+import cappucino from '../products/cappucino.jpg';
+import americano from '../products/americano.jpg';
+import maccofee from '../products/maccoffee.jpg';
+import hotchocolate from '../products/hotchocolate.jpg';
+
 
 export const menuData = {
   "restaurant": {
@@ -129,15 +138,15 @@ export const menuData = {
       { "id": "a_10", "title": { "az": "Moxito (Qrafin)", "en": "Mojito (Pitcher)", "ru": "Мохито (Кувшин)" }, "desc": { "az": "Sərinləşdirici moxito qrafində", "en": "Refreshing mojito in pitcher", "ru": "Освежающий мохито в кувшине" }, "price": "6.00 ₼", "image": moxito }
     ],
     "enerji": [
-      { "id": "en_1", "title": { "az": "Red bull", "en": "Red bull", "ru": "Red bull" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "5.00 ₼", "image": "" },
-      { "id": "en_2", "title": { "az": "Bizon", "en": "Bizon", "ru": "Bizon" }, "desc": { "az": "Bütün növlər", "en": "All varieties", "ru": "Все виды" }, "price": "3.00 ₼", "image": "" },
-      { "id": "en_3", "title": { "az": "Monster", "en": "Monster", "ru": "Monster" }, "desc": { "az": "Böyük həcm enerji içkisi", "en": "Large energy drink", "ru": "Энергетический напиток большой" }, "price": "10.00 ₼", "image": "" }
+      { "id": "en_1", "title": { "az": "Red bull", "en": "Red bull", "ru": "Red bull" }, "desc": { "az": "Enerji içkisi", "en": "Energy drink", "ru": "Энергетический напиток" }, "price": "5.00 ₼", "image": redbull },
+      { "id": "en_2", "title": { "az": "Bizon", "en": "Bizon", "ru": "Bizon" }, "desc": { "az": "Bütün növlər", "en": "All varieties", "ru": "Все виды" }, "price": "3.00 ₼", "image": bizon },
+      { "id": "en_3", "title": { "az": "Monster", "en": "Monster", "ru": "Monster" }, "desc": { "az": "Böyük həcm enerji içkisi", "en": "Large energy drink", "ru": "Энергетический напиток большой" }, "price": "10.00 ₼", "image": monster }
     ],
     "kofeler": [
-      { "id": "kf_1", "title": { "az": "Kappucino (paket)", "en": "Cappuccino (packet)", "ru": "Капучино (пакет)" }, "desc": { "az": "İsti hazır qəhvə", "en": "Hot instant coffee", "ru": "Горячий растворимый кофе" }, "price": "2.00 ₼", "image": "" },
-      { "id": "kf_2", "title": { "az": "Amerikano (paket)", "en": "Americano (packet)", "ru": "Американо (пакет)" }, "desc": { "az": "İsti qəhvə", "en": "Hot coffee", "ru": "Горячий кофе" }, "price": "2.00 ₼", "image": "" },
-      { "id": "kf_3", "title": { "az": "Maccofe (paket)", "en": "Maccode (packet)", "ru": "Maccode (пакет)" }, "desc": { "az": "Hazır qəhvə paketi", "en": "Instant coffee packet", "ru": "Пакет растворимого кофе" }, "price": "2.00 ₼", "image": "" },
-      { "id": "kf_4", "title": { "az": "İsti şokolad", "en": "Hot chocolate", "ru": "Горячий шоколад" }, "desc": { "az": "Şokoladlı isti içki", "en": "Chocolate hot drink", "ru": "Шоколадный горячий напиток" }, "price": "2.00 ₼", "image": "" }
+      { "id": "kf_1", "title": { "az": "Kappucino (paket)", "en": "Cappuccino (packet)", "ru": "Капучино (пакет)" }, "desc": { "az": "İsti hazır qəhvə", "en": "Hot instant coffee", "ru": "Горячий растворимый кофе" }, "price": "2.00 ₼", "image": cappucino },
+      { "id": "kf_2", "title": { "az": "Amerikano (paket)", "en": "Americano (packet)", "ru": "Американо (пакет)" }, "desc": { "az": "İsti qəhvə", "en": "Hot coffee", "ru": "Горячий кофе" }, "price": "2.00 ₼", "image": americano },
+      { "id": "kf_3", "title": { "az": "Maccofe (paket)", "en": "Maccode (packet)", "ru": "Maccode (пакет)" }, "desc": { "az": "Hazır qəhvə paketi", "en": "Instant coffee packet", "ru": "Пакет растворимого кофе" }, "price": "2.00 ₼", "image": maccofee },
+      { "id": "kf_4", "title": { "az": "İsti şokolad", "en": "Hot chocolate", "ru": "Горячий шоколад" }, "desc": { "az": "Şokoladlı isti içki", "en": "Chocolate hot drink", "ru": "Шоколадный горячий напиток" }, "price": "2.00 ₼", "image": hotchocolate }
     ],
     "qelyanlar": [
       { "id": "ql_1", "title": { "az": "Saxsı", "en": "Clay bowl", "ru": "Глиняная чаша" }, "desc": { "az": "Standart şaxtı qəlyan", "en": "Standard clay bowl shisha", "ru": "Стандартный кальян на чаше" }, "price": "10.00 ₼", "image": "https://images.unsplash.com/photo-1574894706980-1664d420f8fc?auto=format&fit=crop&w=600&q=80" },
