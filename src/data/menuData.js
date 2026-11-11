@@ -287,9 +287,9 @@ export const menuData = {
     ],
     "sirniyyat": [
       { "id": "cs_1", "title": { "az": "Alpengold", "en": "Alpengold", "ru": "Alpengold" }, "desc": { "az": "Standart şokolad", "en": "Standard chocolate", "ru": "Шоколад" }, "price": "6.00 ₼", "image": alpengold },
-      { "id": "cs_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Snickers" }, "desc": { "az": "Fıstıqlı baton", "en": "Peanut chocolate bar", "ru": "Шоколадный батончик с арахисом" }, "price": "4.00 ₼", "image": snickers },
-      { "id": "cs_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Bounty" }, "desc": { "az": "Kokos içlikli şokolad", "en": "Coconut filled chocolate", "ru": "Шоколад с кокосовой начинкой" }, "price": "4.00 ₼", "image": bounty },
-      { "id": "cs_4", "title": { "az": "Twix", "en": "Twix", "ru": "Twix" }, "desc": { "az": "Karamel və peçenye", "en": "Caramel and cookie", "ru": "Печенье с карамелью" }, "price": "4.00 ₼", "image": twix },
+      { "id": "cs_2", "title": { "az": "Snickers", "en": "Snickers", "ru": "Snickers" }, "desc": { "az": "Fıstıqlı baton", "en": "Peanut chocolate bar", "ru": "Шоколадный батончик с арахисом" }, "price": "5.00 ₼", "image": snickers },
+      { "id": "cs_3", "title": { "az": "Bounty", "en": "Bounty", "ru": "Bounty" }, "desc": { "az": "Kokos içlikli şokolad", "en": "Coconut filled chocolate", "ru": "Шоколад с кокосовой начинкой" }, "price": "5.00 ₼", "image": bounty },
+      { "id": "cs_4", "title": { "az": "Twix", "en": "Twix", "ru": "Twix" }, "desc": { "az": "Karamel və peçenye", "en": "Caramel and cookie", "ru": "Печенье с карамелью" }, "price": "5.00 ₼", "image": twix },
       { "id": "cs_5", "title": { "az": "Rulet", "en": "Roll cake", "ru": "Рулет" }, "desc": { "az": "Dilimlənmiş şirin rulet", "en": "Sliced sweet roll", "ru": "Сладкий рулет" }, "price": "5.00 ₼", "image": rulet },
       { "id": "cs_6", "title": { "az": "Cocopie", "en": "Cocopie", "ru": "Chocopie" }, "desc": { "az": "Paketdə 6 ədəd", "en": "6 pieces in pack", "ru": "6 штук в упаковке" }, "price": "6.00 ₼", "image": chocopie },
       { "id": "cs_7", "title": { "az": "Rafaello", "en": "Rafaello", "ru": "Rafaello" }, "desc": { "az": "Kokoslu konfet, 6 ədəd", "en": "Coconut candies, 6 pcs", "ru": "Кокосовые конфеты, 6 шт" }, "price": "6.00 ₼", "image": rafaellokonfet },
